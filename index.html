@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物教師甄試題庫</title>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text: #1a202c;
+    --text-muted: #718096;
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --tag-cell: #dbeafe; --tag-cell-t: #1e40af;
+    --tag-gene: #fef3c7; --tag-gene-t: #92400e;
+    --tag-mol:  #dcfce7; --tag-mol-t:  #166534;
+    --tag-ani:  #fee2e2; --tag-ani-t:  #991b1b;
+    --tag-plant:#f0fdf4; --tag-plant-t:#15803d;
+    --tag-eco:  #e0f2fe; --tag-eco-t:  #0369a1;
+    --tag-evo:  #f5f3ff; --tag-evo-t:  #6d28d9;
+    --tag-sc:   #f0fdf4; --tag-sc-t:   #166534;
+    --tag-mc:   #fffbeb; --tag-mc-t:   #b45309;
+    --tag-sa:   #f0f9ff; --tag-sa-t:   #0369a1;
+    --tag-es:   #fdf4ff; --tag-es-t:   #7e22ce;
+    --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
+    --shadow-lg: 0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.05);
+    --radius: 10px;
+  }
+  [data-theme="dark"] {
+    --bg: #0f172a; --surface: #1e293b; --border: #334155;
+    --text: #f1f5f9; --text-muted: #94a3b8; --primary: #60a5fa;
+    --tag-cell: #1e3a5f; --tag-cell-t: #93c5fd;
+    --tag-gene: #422006; --tag-gene-t: #fcd34d;
+    --tag-mol:  #052e16; --tag-mol-t:  #86efac;
+    --tag-ani:  #450a0a; --tag-ani-t:  #fca5a5;
+    --tag-plant:#052e16; --tag-plant-t:#4ade80;
+    --tag-eco:  #0c2a3e; --tag-eco-t:  #38bdf8;
+    --tag-evo:  #2e1065; --tag-evo-t:  #c4b5fd;
+    --tag-sc:   #052e16; --tag-sc-t:   #4ade80;
+    --tag-mc:   #451a03; --tag-mc-t:   #fbbf24;
+    --tag-sa:   #0c2a3e; --tag-sa-t:   #38bdf8;
+    --tag-es:   #3b0764; --tag-es-t:   #d8b4fe;
+    --shadow: 0 1px 3px rgba(0,0,0,.3);
+    --shadow-lg: 0 4px 6px rgba(0,0,0,.3);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         background: var(--bg); color: var(--text); transition: background .2s, color .2s; }
+
+  /* ── 頂部 ── */
+  header { background: var(--primary); color: #fff; padding: 16px 20px;
+           display: flex; align-items: center; justify-content: space-between;
+           position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-lg); }
+  header h1 { font-size: 1.1rem; font-weight: 700; }
+  header .meta { font-size: .78rem; opacity: .85; margin-top: 2px; }
+  .header-right { display: flex; gap: 10px; align-items: center; }
+  .btn-icon { background: rgba(255,255,255,.2); border: none; border-radius: 6px;
+              padding: 6px 10px; color: #fff; cursor: pointer; font-size: .85rem;
+              transition: background .15s; }
+  .btn-icon:hover { background: rgba(255,255,255,.35); }
+
+  /* ── 篩選列 ── */
+  .filter-bar { background: var(--surface); border-bottom: 1px solid var(--border);
+                padding: 12px 20px; position: sticky; top: 57px; z-index: 90;
+                display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+                box-shadow: var(--shadow); }
+  .search-wrap { position: relative; flex: 1; min-width: 200px; }
+  .search-wrap input { width: 100%; padding: 8px 12px 8px 36px; border: 1px solid var(--border);
+                       border-radius: 8px; font-size: .9rem; background: var(--bg);
+                       color: var(--text); outline: none; transition: border-color .15s; }
+  .search-wrap input:focus { border-color: var(--primary); }
+  .search-wrap .icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+                       color: var(--text-muted); font-size: .9rem; pointer-events: none; }
+  select { padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px;
+           font-size: .85rem; background: var(--bg); color: var(--text); outline: none;
+           cursor: pointer; transition: border-color .15s; }
+  select:focus { border-color: var(--primary); }
+  .filter-count { font-size: .82rem; color: var(--text-muted); white-space: nowrap;
+                  padding: 6px 10px; background: var(--bg); border-radius: 8px;
+                  border: 1px solid var(--border); }
+
+  /* ── 主內容 ── */
+  main { max-width: 900px; margin: 0 auto; padding: 20px 16px; }
+
+  /* ── 統計卡片 ── */
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+               gap: 10px; margin-bottom: 20px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border);
+               border-radius: var(--radius); padding: 14px; text-align: center;
+               box-shadow: var(--shadow); }
+  .stat-card .num { font-size: 1.6rem; font-weight: 700; color: var(--primary); }
+  .stat-card .lbl { font-size: .75rem; color: var(--text-muted); margin-top: 2px; }
+
+  /* ── 題目卡片 ── */
+  .q-list { display: flex; flex-direction: column; gap: 12px; }
+  .q-card { background: var(--surface); border: 1px solid var(--border);
+             border-radius: var(--radius); box-shadow: var(--shadow);
+             overflow: hidden; transition: box-shadow .15s; }
+  .q-card:hover { box-shadow: var(--shadow-lg); }
+  .q-head { padding: 12px 16px; display: flex; align-items: flex-start; gap: 10px;
+            cursor: pointer; user-select: none; }
+  .q-num { font-size: .72rem; color: var(--text-muted); font-family: monospace;
+           white-space: nowrap; padding-top: 2px; }
+  .q-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 20px;
+         font-size: .72rem; font-weight: 600; white-space: nowrap; }
+  .tag-細胞學    { background: var(--tag-cell);  color: var(--tag-cell-t); }
+  .tag-遺傳學    { background: var(--tag-gene);  color: var(--tag-gene-t); }
+  .tag-分子生物學 { background: var(--tag-mol);   color: var(--tag-mol-t);  }
+  .tag-動物學    { background: var(--tag-ani);   color: var(--tag-ani-t);  }
+  .tag-植物學    { background: var(--tag-plant); color: var(--tag-plant-t);}
+  .tag-生態學    { background: var(--tag-eco);   color: var(--tag-eco-t);  }
+  .tag-演化學    { background: var(--tag-evo);   color: var(--tag-evo-t);  }
+  .tag-single_choice  { background: var(--tag-sc);  color: var(--tag-sc-t);  }
+  .tag-multiple_choice{ background: var(--tag-mc);  color: var(--tag-mc-t);  }
+  .tag-short_answer   { background: var(--tag-sa);  color: var(--tag-sa-t);  }
+  .tag-essay          { background: var(--tag-es);  color: var(--tag-es-t);  }
+  .tag-school { background: var(--bg); color: var(--text-muted);
+                border: 1px solid var(--border); }
+  .q-stem { font-size: .9rem; line-height: 1.6; flex: 1; }
+  .q-chevron { color: var(--text-muted); font-size: .85rem; margin-left: auto;
+               transition: transform .2s; flex-shrink: 0; }
+  .q-card.open .q-chevron { transform: rotate(180deg); }
+  .q-body { display: none; padding: 0 16px 14px; border-top: 1px solid var(--border); }
+  .q-card.open .q-body { display: block; }
+  .options { margin: 10px 0; display: flex; flex-direction: column; gap: 5px; }
+  .opt { display: flex; gap: 8px; font-size: .875rem; line-height: 1.5; }
+  .opt-key { font-weight: 700; color: var(--primary); min-width: 20px; }
+  .q-answer { margin-top: 10px; padding: 8px 12px; border-radius: 8px;
+              background: var(--bg); border: 1px solid var(--border);
+              font-size: .85rem; }
+  .q-answer .lbl { font-weight: 600; color: var(--primary); margin-right: 6px; }
+  .concepts-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+  .concept-tag { font-size: .72rem; padding: 2px 8px; border-radius: 20px;
+                 background: var(--bg); border: 1px solid var(--border);
+                 color: var(--text-muted); }
+  mark { background: #fef08a; color: #1a202c; border-radius: 3px; padding: 0 1px; }
+  [data-theme="dark"] mark { background: #854d0e; color: #fef9c3; }
+
+  /* ── 空狀態 ── */
+  .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+  .empty .icon { font-size: 3rem; margin-bottom: 12px; }
+
+  /* ── RWD ── */
+  @media (max-width: 600px) {
+    .filter-bar { padding: 10px 12px; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    header h1 { font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🧬 生物教師甄試題庫</h1>
+    <div class="meta" id="db-meta">載入中…</div>
+  </div>
+  <div class="header-right">
+    <button class="btn-icon" onclick="toggleAll(true)">全展開</button>
+    <button class="btn-icon" onclick="toggleAll(false)">全收合</button>
+    <button class="btn-icon" id="theme-btn" onclick="toggleTheme()">🌙</button>
+  </div>
+</header>
+
+<div class="filter-bar">
+  <div class="search-wrap">
+    <span class="icon">🔍</span>
+    <input type="text" id="search" placeholder="關鍵字搜尋題幹、概念…" oninput="render()">
+  </div>
+  <select id="f-topic" onchange="render()">
+    <option value="">所有主題</option>
+    <option>細胞學</option><option>遺傳學</option><option>分子生物學</option>
+    <option>動物學</option><option>植物學</option><option>生態學</option><option>演化學</option>
+  </select>
+  <select id="f-type" onchange="render()">
+    <option value="">所有題型</option>
+    <option value="single_choice">單選題</option>
+    <option value="multiple_choice">多選題</option>
+    <option value="short_answer">簡答題</option>
+    <option value="essay">申論題</option>
+  </select>
+  <select id="f-year" onchange="render()">
+    <option value="">所有年度</option>
+  </select>
+  <select id="f-school" onchange="render()">
+    <option value="">所有學校</option>
+  </select>
+  <div class="filter-count" id="filter-count">— 題</div>
+</div>
+
+<main>
+  <div class="stats-row" id="stats-row"></div>
+  <div class="q-list" id="q-list"></div>
+  <div class="empty" id="empty" style="display:none">
+    <div class="icon">🔬</div>
+    <div>找不到符合條件的題目</div>
+  </div>
+</main>
+
+<script>
+let ALL = [];
+
+const TYPE_LABEL = {
+  single_choice: '單選', multiple_choice: '多選',
+  short_answer: '簡答', essay: '申論'
+};
+
+// ── 主題統計色 ──
+const TOPIC_COLORS = {
+  '細胞學':'#3b82f6','遺傳學':'#f59e0b','分子生物學':'#10b981',
+  '動物學':'#ef4444','植物學':'#22c55e','生態學':'#06b6d4','演化學':'#8b5cf6'
+};
+
+// ── 載入資料 ──
+fetch('questions.json')
+  .then(r => r.json())
+  .then(db => {
+    ALL = db.questions;
+    document.getElementById('db-meta').textContent =
+      `共 ${db.metadata.total_questions} 題 · 更新：${db.metadata.last_updated}`;
+    buildSelects();
+    render();
+  })
+  .catch(() => {
+    document.getElementById('db-meta').textContent = '⚠️ 無法載入題庫（請用 HTTP 伺服器開啟）';
+  });
+
+function buildSelects() {
+  const years   = [...new Set(ALL.map(q => q.year))].sort((a,b)=>b-a);
+  const schools = [...new Set(ALL.map(q => q.school))].sort();
+  const yEl = document.getElementById('f-year');
+  const sEl = document.getElementById('f-school');
+  years.forEach(y => {
+    const o = document.createElement('option');
+    o.value = y; o.textContent = `民國 ${y-1911} 年（${y}）`;
+    yEl.appendChild(o);
+  });
+  schools.forEach(s => {
+    const o = document.createElement('option');
+    o.value = s; o.textContent = s;
+    sEl.appendChild(o);
+  });
+}
+
+// ── 篩選 ──
+function getFiltered() {
+  const kw     = document.getElementById('search').value.trim().toLowerCase();
+  const topic  = document.getElementById('f-topic').value;
+  const type   = document.getElementById('f-type').value;
+  const year   = document.getElementById('f-year').value;
+  const school = document.getElementById('f-school').value;
+
+  return ALL.filter(q => {
+    if (topic  && q.topic  !== topic)  return false;
+    if (type   && q.type   !== type)   return false;
+    if (year   && String(q.year) !== year) return false;
+    if (school && q.school !== school) return false;
+    if (kw) {
+      const haystack = [q.stem, ...(q.concepts||[]),
+        Object.values(q.options||{}).join(' ')].join(' ').toLowerCase();
+      if (!kw.split(/\s+/).every(w => haystack.includes(w))) return false;
+    }
+    return true;
+  });
+}
+
+// ── 高亮 ──
+function highlight(text) {
+  const kw = document.getElementById('search').value.trim();
+  if (!kw) return esc(text);
+  const words = kw.split(/\s+/).filter(Boolean);
+  let result = esc(text);
+  words.forEach(w => {
+    result = result.replace(new RegExp(esc(w), 'gi'), m => `<mark>${m}</mark>`);
+  });
+  return result;
+}
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ── 渲染 ──
+function render() {
+  const filtered = getFiltered();
+  document.getElementById('filter-count').textContent = `${filtered.length} 題`;
+
+  // 統計卡
+  const topicCounts = {};
+  filtered.forEach(q => { topicCounts[q.topic] = (topicCounts[q.topic]||0)+1; });
+  const statsHTML = Object.entries(topicCounts)
+    .sort((a,b)=>b[1]-a[1])
+    .map(([t,c]) => `<div class="stat-card">
+      <div class="num" style="color:${TOPIC_COLORS[t]||'var(--primary)'}">${c}</div>
+      <div class="lbl">${t}</div>
+    </div>`).join('');
+  document.getElementById('stats-row').innerHTML = statsHTML;
+
+  // 題目卡
+  const listEl = document.getElementById('q-list');
+  const emptyEl = document.getElementById('empty');
+  if (filtered.length === 0) {
+    listEl.innerHTML = ''; emptyEl.style.display = ''; return;
+  }
+  emptyEl.style.display = 'none';
+
+  listEl.innerHTML = filtered.map(q => {
+    const stemHtml = highlight(q.stem);
+    const optionsHtml = q.options
+      ? '<div class="options">' + Object.entries(q.options).map(([k,v]) =>
+          `<div class="opt"><span class="opt-key">${k}</span><span>${highlight(v)}</span></div>`
+        ).join('') + '</div>'
+      : '';
+    const answerHtml = q.answer
+      ? `<div class="q-answer"><span class="lbl">答案：</span>${esc(q.answer)}</div>`
+      : '';
+    const conceptsHtml = (q.concepts||[]).length
+      ? `<div class="concepts-row">${q.concepts.map(c=>
+          `<span class="concept-tag">${esc(c)}</span>`).join('')}</div>`
+      : '';
+
+    return `<div class="q-card" id="card-${q.id}">
+      <div class="q-head" onclick="toggleCard('${q.id}')">
+        <div style="flex:1; min-width:0;">
+          <div class="q-tags">
+            <span class="tag tag-${esc(q.topic)}">${esc(q.topic)}</span>
+            <span class="tag tag-${esc(q.type)}">${TYPE_LABEL[q.type]||q.type}</span>
+            <span class="tag tag-school">${esc(q.school.replace(/^.*?立/,'').replace(/高級中等學校|高級中學|附屬高級中學/g,''))}</span>
+            <span class="tag tag-school">民${q.year-1911}</span>
+          </div>
+          <div class="q-stem">${stemHtml}</div>
+          <div class="q-num">${esc(q.id)}</div>
+        </div>
+        <span class="q-chevron">▼</span>
+      </div>
+      <div class="q-body">
+        ${optionsHtml}
+        ${answerHtml}
+        ${conceptsHtml}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleCard(id) {
+  document.getElementById('card-' + id)?.classList.toggle('open');
+}
+function toggleAll(open) {
+  document.querySelectorAll('.q-card').forEach(c =>
+    open ? c.classList.add('open') : c.classList.remove('open'));
+}
+
+// ── 深色模式 ──
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+  document.getElementById('theme-btn').textContent = isDark ? '🌙' : '☀️';
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+}
+(function initTheme() {
+  const saved = localStorage.getItem('theme') || 'light';
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('theme-btn').textContent = '☀️';
+  }
+})();
+</script>
+</body>
+</html>
