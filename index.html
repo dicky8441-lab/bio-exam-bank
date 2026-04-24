@@ -168,6 +168,18 @@
   .btn-clear { background: var(--bg); color: var(--text-muted);
     border: 1px solid var(--border); }
 
+  /* ── 診斷模式 ── */
+  .q-card.diag-warn { border-left: 4px solid #f59e0b; }
+  .q-card.diag-error { border-left: 4px solid #ef4444; }
+  .diag-badge { display: none; font-size: .7rem; padding: 2px 7px; border-radius: 20px;
+    font-weight: 700; margin-left: 4px; }
+  .diag-warn .diag-badge  { display: inline-block; background: #fef3c7; color: #92400e; }
+  .diag-error .diag-badge { display: inline-block; background: #fee2e2; color: #991b1b; }
+  .diag-bar { display: none; background: #fffbeb; border: 1px solid #f59e0b;
+    border-radius: 10px; padding: 12px 16px; margin-bottom: 12px;
+    font-size: .85rem; line-height: 1.7; }
+  .diag-bar.show { display: block; }
+
   /* ── 列印 ── */
   @media print {
     header, .filter-bar, #stats-row, .export-bar, #empty { display: none !important; }
@@ -199,6 +211,7 @@
     <button class="btn-icon" onclick="toggleAll(true)">全展開</button>
     <button class="btn-icon" onclick="toggleAll(false)">全收合</button>
     <button class="btn-icon" id="select-btn" onclick="toggleSelectMode()">勾選</button>
+    <button class="btn-icon" id="diag-btn" onclick="toggleDiagMode()">診斷</button>
     <button class="btn-icon" id="theme-btn" onclick="toggleTheme()">🌙</button>
   </div>
 </header>
@@ -230,6 +243,7 @@
 </div>
 
 <main>
+  <div class="diag-bar" id="diag-bar"></div>
   <div class="stats-row" id="stats-row"></div>
   <div class="q-list" id="q-list"></div>
   <div class="empty" id="empty" style="display:none">
@@ -519,6 +533,85 @@ async function exportDOCX() {
   a.href = url; a.download = `生物甄試題目_${selected.length}題.docx`;
   a.click();
   URL.revokeObjectURL(url);
+}
+
+// ── 診斷模式 ──
+let diagMode = false;
+
+function countOptionSets(stem) {
+  return (stem.match(/[（(][Aa][）)]/g) || []).length;
+}
+function hasInnerQNum(stem) {
+  return /(?<!\d)\d{1,2}[\.、．]\s*[\u4e00-\u9fff下列哪何以請]/.test(stem);
+}
+
+function toggleDiagMode() {
+  diagMode = !diagMode;
+  document.getElementById('diag-btn').textContent = diagMode ? '✕ 診斷' : '診斷';
+  if (!diagMode) {
+    document.querySelectorAll('.q-card').forEach(c => {
+      c.classList.remove('diag-warn','diag-error');
+      const b = c.querySelector('.diag-badge');
+      if (b) b.remove();
+    });
+    const bar = document.getElementById('diag-bar');
+    bar.classList.remove('show'); bar.innerHTML = '';
+    return;
+  }
+  runDiagnosis();
+}
+
+function runDiagnosis() {
+  const cards = document.querySelectorAll('.q-card');
+  let warnCount = 0, errorCount = 0;
+  const problems = [];
+
+  cards.forEach(card => {
+    const id = card.id.replace('card-', '');
+    const q = ALL.find(x => x.id === id);
+    if (!q) return;
+
+    const sets = countOptionSets(q.stem);
+    const hasInner = hasInnerQNum(q.stem);
+    const isLong = q.stem.length > 500;
+
+    let level = null, reason = '';
+    if (sets >= 2) {
+      level = 'error'; reason = `含 ${sets} 組選項（可能合題）`;
+      errorCount++;
+    } else if (isLong && hasInner) {
+      level = 'warn'; reason = `題幹過長且含內部題號`;
+      warnCount++;
+    } else if (isLong) {
+      level = 'warn'; reason = `題幹超過 500 字`;
+      warnCount++;
+    }
+
+    if (level) {
+      card.classList.add(level === 'error' ? 'diag-error' : 'diag-warn');
+      // 插入 badge
+      const tagsDiv = card.querySelector('.q-tags');
+      if (tagsDiv && !card.querySelector('.diag-badge')) {
+        const badge = document.createElement('span');
+        badge.className = 'diag-badge';
+        badge.textContent = level === 'error' ? '⚠ 可能合題' : '⚠ 過長';
+        badge.title = reason;
+        tagsDiv.appendChild(badge);
+      }
+      problems.push({ id, school: q.school, year: q.year-1911, reason });
+    }
+  });
+
+  const bar = document.getElementById('diag-bar');
+  if (warnCount + errorCount === 0) {
+    bar.innerHTML = '✅ 目前顯示的題目中，未偵測到明顯合題或異常。';
+  } else {
+    const lines = problems.map(p =>
+      `<li><code>${p.id}</code> — ${p.school} 民${p.year}年：${p.reason}</li>`
+    ).join('');
+    bar.innerHTML = `<strong>⚠ 偵測到 ${errorCount} 題可能合題、${warnCount} 題題幹過長</strong>（紅框=嚴重、橘框=輕微）<br><ul style="margin-top:8px;padding-left:20px">${lines}</ul>`;
+  }
+  bar.classList.add('show');
 }
 
 // ── 深色模式 ──
