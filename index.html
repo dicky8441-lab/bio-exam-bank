@@ -603,15 +603,40 @@ function runDiagnosis() {
   });
 
   const bar = document.getElementById('diag-bar');
+  window._diagProblems = problems;
   if (warnCount + errorCount === 0) {
     bar.innerHTML = '✅ 目前顯示的題目中，未偵測到明顯合題或異常。';
   } else {
     const lines = problems.map(p =>
       `<li><code>${p.id}</code> — ${p.school} 民${p.year}年：${p.reason}</li>`
     ).join('');
-    bar.innerHTML = `<strong>⚠ 偵測到 ${errorCount} 題可能合題、${warnCount} 題題幹過長</strong>（紅框=嚴重、橘框=輕微）<br><ul style="margin-top:8px;padding-left:20px">${lines}</ul>`;
+    const dlBtn = `<button onclick="downloadDiagReport()" style="margin-top:10px;padding:6px 14px;border-radius:8px;border:1px solid #f59e0b;background:#fffbeb;color:#92400e;font-weight:600;cursor:pointer;">⬇ 下載問題報告（給 Claude 重新處理用）</button>`;
+  bar.innerHTML = `<strong>⚠ 偵測到 ${errorCount} 題可能合題、${warnCount} 題題幹過長</strong>（紅框=嚴重、橘框=輕微）<br><ul style="margin-top:8px;padding-left:20px">${lines}</ul>${dlBtn}`;
+  window._diagProblems = problems;
   }
   bar.classList.add('show');
+}
+
+function downloadDiagReport() {
+  const problems = window._diagProblems || [];
+  const report = {
+    generated: new Date().toISOString(),
+    total_problems: problems.length,
+    problems: problems.map(p => ({
+      id: p.id,
+      school: p.school,
+      year: p.year,
+      reason: p.reason,
+      source_file: ALL.find(q => q.id === p.id)?.source_file || ''
+    }))
+  };
+  const blob = new Blob([JSON.stringify(report, null, 2)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'diag_report.json';
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 // ── 深色模式 ──
