@@ -118,6 +118,8 @@
   .tag-multiple_choice{ background: var(--tag-mc);  color: var(--tag-mc-t);  }
   .tag-short_answer   { background: var(--tag-sa);  color: var(--tag-sa-t);  }
   .tag-essay          { background: var(--tag-es);  color: var(--tag-es-t);  }
+  .tag-term_explanation { background: #fdf4ff; color: #6d28d9; border: 1px solid #e9d5ff; }
+  [data-theme="dark"] .tag-term_explanation { background: #3b0764; color: #d8b4fe; }
   .tag-school { background: var(--bg); color: var(--text-muted);
                 border: 1px solid var(--border); }
   .q-stem { font-size: .9rem; line-height: 1.6; flex: 1; }
@@ -232,6 +234,7 @@
     <option value="multiple_choice">多選題</option>
     <option value="short_answer">簡答題</option>
     <option value="essay">申論題</option>
+    <option value="term_explanation">名詞解釋</option>
   </select>
   <select id="f-year" onchange="render()">
     <option value="">所有年度</option>
@@ -267,7 +270,7 @@ let selectMode = false;
 
 const TYPE_LABEL = {
   single_choice: '單選', multiple_choice: '多選',
-  short_answer: '簡答', essay: '申論'
+  short_answer: '簡答', essay: '申論', term_explanation: '名詞解釋'
 };
 
 // ── 主題統計色 ──
