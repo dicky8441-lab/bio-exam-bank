@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "last_updated": "2026-04-24",
-    "total_questions": 5806,
+    "total_questions": 5785,
     "topics_supported": [
       "細胞學",
       "遺傳學",
@@ -3721,7 +3721,7 @@
       "region": "桃園市",
       "school": "桃園市立桃園高級中學",
       "source_file": "115 桃園高中.md",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "RNA"
@@ -3736,7 +3736,7 @@
       "region": "桃園市",
       "school": "桃園市立桃園高級中學",
       "source_file": "115 桃園高中.md",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "RNA"
@@ -12117,7 +12117,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "100 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA"
@@ -12132,7 +12132,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "100 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA"
@@ -12147,7 +12147,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "100 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA"
@@ -12162,7 +12162,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "100 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA"
@@ -12177,7 +12177,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "100 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA"
@@ -19289,19 +19289,6 @@
       "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
-      "stem": "略（6分）",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TNNHG-046",
-      "year": 2012,
-      "region": "臺南市",
-      "school": "國立臺南女子高級中學",
-      "source_file": "101 台南女中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "（1）氧氣分壓（pO ）（2）氫離子濃度（pH；Bohr effect）（3）二氧化碳分壓（pCO ） 2 2 （4）2,3-BPG存在與否（5）體溫（6分）",
       "answer": "",
       "explanation": "",
@@ -19933,36 +19920,10 @@
       "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
-      "stem": "NADP＋",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-OTH-036",
-      "year": 2012,
-      "region": "未知",
-      "school": "嘉義女中",
-      "source_file": "101 嘉義女中.doc"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "氧氣(O2) H＋累積處",
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2012-OTH-037",
-      "year": 2012,
-      "region": "未知",
-      "school": "嘉義女中",
-      "source_file": "101 嘉義女中.doc"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "囊狀膜內腔",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-OTH-038",
       "year": 2012,
       "region": "未知",
       "school": "嘉義女中",
@@ -24758,7 +24719,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "101 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花",
@@ -24775,7 +24736,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "101 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花",
@@ -24792,7 +24753,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "101 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花",
@@ -24809,7 +24770,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "101 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花",
@@ -24826,7 +24787,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "101 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花",
@@ -24843,7 +24804,7 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "101 鳳山高中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花",
@@ -25858,29 +25819,6 @@
         "B": "蒸散作用",
         "C": "光合作用",
         "D": "泌液作用。"
-      }
-    },
-    {
-      "type": "single_choice",
-      "topic": "分子生物學",
-      "concepts": [
-        "DNA",
-        "質體",
-        "載體"
-      ],
-      "stem": "何謂質體？",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2013-CTJH-009",
-      "year": 2013,
-      "region": "臺中市",
-      "school": "中區國中教師聯招",
-      "source_file": "102 中區國中聯招.pdf",
-      "options": {
-        "A": "是一種病毒DNA",
-        "B": "和",
-        "C": "。",
-        "D": ""
       }
     },
     {
@@ -27920,7 +27858,7 @@
       "region": "臺南市",
       "school": "南區國中教師聯招",
       "source_file": "102 南區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -27937,7 +27875,7 @@
       "region": "臺南市",
       "school": "南區國中教師聯招",
       "source_file": "102 南區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -27954,7 +27892,7 @@
       "region": "臺南市",
       "school": "南區國中教師聯招",
       "source_file": "102 南區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -27971,7 +27909,7 @@
       "region": "臺南市",
       "school": "南區國中教師聯招",
       "source_file": "102 南區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -27988,7 +27926,7 @@
       "region": "臺南市",
       "school": "南區國中教師聯招",
       "source_file": "102 南區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -29077,31 +29015,6 @@
     },
     {
       "type": "multiple_choice",
-      "topic": "動物學",
-      "concepts": [
-        "孟德爾",
-        "顯性",
-        "互換",
-        "染色體"
-      ],
-      "stem": "果蠅的紅眼",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2013-NTNU-015",
-      "year": 2013,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "102 師大附中代理.pdf",
-      "options": {
-        "B": "和長 翅(V)基因位於同一染色體上",
-        "A": "Px為異型合子",
-        "C": "Px之紅眼",
-        "D": "控制翅長和眼色基因間的互換率為12.5%",
-        "E": "染 色體若發生互換，則其時機應為第一次減數分裂前期。"
-      }
-    },
-    {
-      "type": "multiple_choice",
       "topic": "分子生物學",
       "concepts": [
         "DNA"
@@ -29541,19 +29454,6 @@
       "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
-      "stem": "RAAS",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2013-OTH-053",
-      "year": 2013,
-      "region": "未知",
-      "school": "復興高中",
-      "source_file": "102 復興高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "Subsidiary cell",
       "answer": "",
       "explanation": "",
@@ -29756,27 +29656,6 @@
         "B": "複製",
         "C": "組裝",
         "D": "釋出 下列各組共生生物（symbiotic organism）， 何者具有內共生（endosymbiosis）的關係？"
-      }
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [
-        "動物分類"
-      ],
-      "stem": "A",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2013-NTPJH-002",
-      "year": 2013,
-      "region": "新北市",
-      "school": "新北市國中教師聯招",
-      "source_file": "102 新北國中聯招.pdf",
-      "options": {
-        "A": "珊瑚及其共生藻類",
-        "B": "植物的根及 A、B 維持原答案 A 其共生真菌",
-        "C": "地衣的真菌與共生藻類",
-        "D": "人類及其腸內的共生菌 近代的動物分類學家認為下列四個動物 門，何者的親緣關係與線蟲動物門最接近？"
       }
     },
     {
@@ -34672,7 +34551,7 @@
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
       "source_file": "103 台北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "有關十二年國民基本教育(cid:1389)試入學之規定，下列哪一項是正確的？\n(1)103年度(cid:1242)就學區之(cid:5492)名(cid:5776)，應(cid:1101)核定(cid:1813)生(cid:5492)名(cid:5776)(cid:1325)分之(cid:910)十(cid:982)以上。",
@@ -34685,7 +34564,7 @@
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
       "source_file": "103 台北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "有關十二年國民基本教育(cid:1389)試入學之規定，下列哪一項是正確的？\n(2)(cid:1242)校提供(cid:1389)試入學名(cid:5776)比率不得低於該校核定(cid:1813)生(cid:5492)名(cid:5776)(cid:1325)分之二十(cid:982)。",
@@ -34698,7 +34577,7 @@
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
       "source_file": "103 台北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "有關十二年國民基本教育(cid:1389)試入學之規定，下列哪一項是正確的？\n(3)學生(cid:3412)名人數未(cid:3756)過學校核定(cid:1813)生名(cid:5776)者，(cid:1220)(cid:5776)(cid:5301)(cid:1687)，(cid:3756)過者，採(cid:1820)(cid:6200)方式(cid:5301)(cid:1687)。",
@@ -34711,7 +34590,7 @@
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
       "source_file": "103 台北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "有關十二年國民基本教育(cid:1389)試入學之規定，下列哪一項是正確的？\n(4)(cid:1389)試入學不得採計國中教育會考成(cid:5486)。",
@@ -39371,7 +39250,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -39386,7 +39265,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -39401,7 +39280,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -39416,7 +39295,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -39431,7 +39310,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -39480,7 +39359,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -39498,7 +39377,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -39516,7 +39395,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -39534,7 +39413,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -39552,7 +39431,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "生態學",
       "concepts": [
         "天擇",
@@ -39648,7 +39527,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -39664,7 +39543,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "遺傳學",
       "concepts": [
         "DNA",
@@ -39680,7 +39559,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -39696,7 +39575,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "遺傳學",
       "concepts": [
         "DNA",
@@ -39712,7 +39591,7 @@
       "region": "臺中市",
       "school": "中區國中教師聯招",
       "source_file": "104 中區國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "遺傳學",
       "concepts": [
         "DNA",
@@ -40475,7 +40354,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -40490,7 +40369,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -40505,7 +40384,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -40520,7 +40399,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -40535,7 +40414,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -40584,7 +40463,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -40602,7 +40481,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -40620,7 +40499,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -40638,7 +40517,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "演化學",
       "concepts": [
         "天擇",
@@ -40656,7 +40535,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "生態學",
       "concepts": [
         "天擇",
@@ -40752,7 +40631,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -40768,7 +40647,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "遺傳學",
       "concepts": [
         "DNA",
@@ -40784,7 +40663,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -40800,7 +40679,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "遺傳學",
       "concepts": [
         "DNA",
@@ -40816,7 +40695,7 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "遺傳學",
       "concepts": [
         "DNA",
@@ -41186,19 +41065,6 @@
       "region": "臺中市",
       "school": "中區公立高中教師甄選聯招",
       "source_file": "104 中區聯招.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "Biome",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2015-TPENIH-001",
-      "year": 2015,
-      "region": "臺北市",
-      "school": "臺北市立內湖高級中學",
-      "source_file": "104 內湖高中（PTT）.doc"
     },
     {
       "type": "short_answer",
@@ -42305,7 +42171,7 @@
       "region": "臺南市",
       "school": "國立臺南女子高級中學",
       "source_file": "104 台南女中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -42321,7 +42187,7 @@
       "region": "臺南市",
       "school": "國立臺南女子高級中學",
       "source_file": "104 台南女中.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -42949,19 +42815,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2015-OTH-007",
-      "year": 2015,
-      "region": "未知",
-      "school": "大同高中（PTT）",
-      "source_file": "104 大同高中（PTT）.doc"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "Biome",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2015-OTH-008",
       "year": 2015,
       "region": "未知",
       "school": "大同高中（PTT）",
@@ -44309,52 +44162,6 @@
       "type": "single_choice",
       "topic": "動物學",
       "concepts": [
-        "神經",
-        "肌肉",
-        "循環",
-        "免疫",
-        "抗體"
-      ],
-      "stem": "4 3",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2015-NTPJH-001",
-      "year": 2015,
-      "region": "新北市",
-      "school": "新北市國中教師聯招",
-      "source_file": "104 新北國中聯招.pdf",
-      "options": {
-        "C": "G2 檢查點",
-        "D": "M 檢查點 第9頁，共9頁 新北市立國民中學 104 學年度教師聯合甄選筆試 試題答案疑義回覆表 國中生物科試題答案疑義 公 題 佈 考生反 題目 徵詢教授意見結果 號 答 映答案 案 下列何種有關葡萄糖的生理作用不會消耗能量？ 1. 沒有",
-        "B": "S 檢查點",
-        "A": "葡萄糖被小腸吸收 答案"
-      }
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [
-        "DNA"
-      ],
-      "stem": "A",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2015-NTPJH-002",
-      "year": 2015,
-      "region": "新北市",
-      "school": "新北市國中教師聯招",
-      "source_file": "104 新北國中聯招.pdf",
-      "options": {
-        "B": "腎小管的再吸收葡萄糖 2.四個 維持原答案 A",
-        "C": "葡萄糖轉換為蛋白質 選項接",
-        "D": "葡萄糖轉換為肝醣 正確 放大下列雙股 DNA的引子(primers)應該是： 5′-ATGGGTGTTATTTCTTCCGGATGTAAATATT-3′ 3′-TACCCACAATAAAGAAGGCCTACATTTATAA-5′",
-        "A": "5′-ATGGGT-3′，5′-TTTATAA-3′"
-      }
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [
         "免疫",
         "抗體"
       ],
@@ -44889,7 +44696,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "細胞學",
       "concepts": [
         "密碼子",
@@ -44906,7 +44713,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "細胞學",
       "concepts": [
         "密碼子",
@@ -44923,7 +44730,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "細胞學",
       "concepts": [
         "密碼子",
@@ -44940,7 +44747,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "細胞學",
       "concepts": [
         "密碼子",
@@ -44957,7 +44764,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "細胞學",
       "concepts": [
         "密碼子",
@@ -44995,7 +44802,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -45012,7 +44819,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -45029,7 +44836,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -45046,7 +44853,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -45063,7 +44870,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "DNA",
@@ -45531,7 +45338,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花"
@@ -45546,7 +45353,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花"
@@ -45561,7 +45368,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花"
@@ -45576,7 +45383,7 @@
       "region": "新北市",
       "school": "新北市公立高中教師甄選聯招",
       "source_file": "104 新北高中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "植物學",
       "concepts": [
         "花"
@@ -46414,19 +46221,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2015-OTH-078",
-      "year": 2015,
-      "region": "未知",
-      "school": "高雄中學（PTT）",
-      "source_file": "104 高雄中學（PTT）.doc"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "題目修改",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2015-OTH-079",
       "year": 2015,
       "region": "未知",
       "school": "高雄中學（PTT）",
@@ -53389,25 +53183,6 @@
     {
       "type": "single_choice",
       "topic": "動物學",
-      "concepts": [],
-      "stem": "1 2",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2019-NTPJH-020",
-      "year": 2019,
-      "region": "新北市",
-      "school": "新北市國中教師聯招",
-      "source_file": "108 新北國中聯招.pdf",
-      "options": {
-        "A": "9/16",
-        "B": "3/16",
-        "C": "5/16",
-        "D": "1/16"
-      }
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
       "concepts": [
         "紅血球"
       ],
@@ -54847,7 +54622,7 @@
       "region": "新北市",
       "school": "新北市國中教師聯招",
       "source_file": "108 新北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "92. 糖解作用的最終產物包含哪些？\n（1）ATP；",
@@ -54860,7 +54635,7 @@
       "region": "新北市",
       "school": "新北市國中教師聯招",
       "source_file": "108 新北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "92. 糖解作用的最終產物包含哪些？\n（2）FADH ；",
@@ -54873,7 +54648,7 @@
       "region": "新北市",
       "school": "新北市國中教師聯招",
       "source_file": "108 新北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "92. 糖解作用的最終產物包含哪些？\n（3）NAD+；",
@@ -54886,7 +54661,7 @@
       "region": "新北市",
       "school": "新北市國中教師聯招",
       "source_file": "108 新北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "92. 糖解作用的最終產物包含哪些？\n（4）pyruvate；",
@@ -54899,7 +54674,7 @@
       "region": "新北市",
       "school": "新北市國中教師聯招",
       "source_file": "108 新北國中聯招.pdf",
-      "type": "single_choice",
+      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "92. 糖解作用的最終產物包含哪些？\n（5）NADH 2",
@@ -67461,25 +67236,6 @@
         "A": "A等位基因的頻率是 0.62",
         "B": "下一代的A等位基因頻率是0.31",
         "C": "a等位基因的頻率是"
-      }
-    },
-    {
-      "type": "multiple_choice",
-      "topic": "動物學",
-      "concepts": [
-        "基因型"
-      ],
-      "stem": "26",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2024-TYNCL-051",
-      "year": 2024,
-      "region": "桃園市",
-      "school": "國立中央大學附屬中壢高級中學",
-      "source_file": "113 中大壢中代理.pdf",
-      "options": {
-        "D": "若下一代有1000 個體，則Aa基因型的個體約有 470個",
-        "E": "當族群大小驟減時，A等位基因在下一 代遺失的機率小於a等位基因"
       }
     },
     {
@@ -82077,19 +81833,6 @@
     },
     {
       "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "孢子與配子",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TPEJG-009",
-      "year": 2025,
-      "region": "臺北市",
-      "school": "臺北市立建國高級中學",
-      "source_file": "114 建國中學.pdf"
-    },
-    {
-      "type": "short_answer",
       "topic": "分子生物學",
       "concepts": [
         "RNA",
@@ -85691,21 +85434,6 @@
     },
     {
       "type": "short_answer",
-      "topic": "分子生物學",
-      "concepts": [
-        "RNA"
-      ],
-      "stem": "siRNA",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TPESS-001",
-      "year": 2025,
-      "region": "臺北市",
-      "school": "臺北市立松山高級中學",
-      "source_file": "114 松山高中.pdf"
-    },
-    {
-      "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
       "stem": "Autophagy",
@@ -89093,32 +88821,6 @@
       "source_file": "114 豐原高中.pdf"
     },
     {
-      "type": "essay",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "╳ ↑ ↓",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TCHFY-018",
-      "year": 2025,
-      "region": "臺中市",
-      "school": "臺中市立豐原高級中等學校",
-      "source_file": "114 豐原高中.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "↓ ╳ ↓",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TCHFY-019",
-      "year": 2025,
-      "region": "臺中市",
-      "school": "臺中市立豐原高級中等學校",
-      "source_file": "114 豐原高中.pdf"
-    },
-    {
       "id": "TCH-BIO-2025-TCHFY-020-g1",
       "year": 2025,
       "region": "臺中市",
@@ -89750,19 +89452,6 @@
         "E": "反應後可產生紫紅色化合物 2"
       },
       "id": "TCH-BIO-2025-KHHJT-010",
-      "year": 2025,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "114 高雄聯招.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "世代交替",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-KHHJT-011",
       "year": 2025,
       "region": "高雄市",
       "school": "高雄市公立高中教師甄選聯招",
@@ -94520,19 +94209,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2026-TPEDZ-182",
-      "year": 2026,
-      "region": "臺北市",
-      "school": "臺北市立大直高級中等學校",
-      "source_file": "115 大直高中 2.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "ABDE",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2026-TPEDZ-183",
       "year": 2026,
       "region": "臺北市",
       "school": "臺北市立大直高級中等學校",
@@ -100720,19 +100396,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2026-TYNHS-040",
-      "year": 2026,
-      "region": "桃園市",
-      "school": "桃園市立桃園高級中學",
-      "source_file": "115 桃園高中.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "ABDE",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2026-TYNHS-041",
       "year": 2026,
       "region": "桃園市",
       "school": "桃園市立桃園高級中學",
