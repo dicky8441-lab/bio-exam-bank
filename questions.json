@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "last_updated": "2026-04-24",
-    "total_questions": 5373,
+    "total_questions": 5305,
     "topics_supported": [
       "細胞學",
       "遺傳學",
@@ -10379,19 +10379,6 @@
       "source_file": "100 桃園國中聯招.pdf"
     },
     {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "題 送分",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2011-TYNJH-013",
-      "year": 2011,
-      "region": "桃園市",
-      "school": "桃園市國中教師聯招",
-      "source_file": "100 桃園國中聯招.pdf"
-    },
-    {
       "type": "single_choice",
       "topic": "動物學",
       "concepts": [],
@@ -16505,19 +16492,6 @@
       "type": "single_choice",
       "topic": "動物學",
       "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案（（（（CCCC））））",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-080",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案（（（（CCCC）））） 健教",
       "answer": "",
       "explanation": "",
@@ -16596,49 +16570,10 @@
       "type": "single_choice",
       "topic": "動物學",
       "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案（（（（CCCC））））",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-087",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案((((DDDD))))",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-088",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "本本本本題題題題答答答答案案案案改改改改成成成成((((AAAA))))、、、、((((CCCC)))) 都都都都給給給給分分分分 特教",
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2012-TPEJH-089",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案((((AAAA))))",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-090",
       "year": 2012,
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
@@ -16654,19 +16589,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2012-TPEJH-091",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案((((CCCC))))",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-092",
       "year": 2012,
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
@@ -16691,36 +16613,10 @@
       "type": "single_choice",
       "topic": "動物學",
       "concepts": [],
-      "stem": "建建建建議議議議本本本本題題題題答答答答案案案案調調調調整整整整為為為為「「「「((((AAAA))))精精精精緻緻緻緻化化化化策策策策略略略略」」」」或或或或「「「「((((BBBB))))組組組組織織織織策策策策略略略略」」」」皆皆皆皆可可可可",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-094",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "林清山（1990）教育心理學-認知取向，第92頁「精緻化策略的發展在教 育上的含意」一節中，清楚提及「記筆記是從聽講中學習的一種精緻化活動， 因為，精緻化策略並不是經常自發的產生，……，所以提供助長精緻化的教 學經驗，就變得特別的重要」。 記筆記的功用有三：(1)引導注意；(2)建立內在聯結(協助學習者組織材 料)；(3)建立外在聯結(使所呈現的訊息與現存知識發生關聯，如精緻化)。",
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2012-TPEJH-095",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案((((AAAA))))",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-096",
       "year": 2012,
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
@@ -16769,19 +16665,6 @@
       "type": "single_choice",
       "topic": "動物學",
       "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案（（（（BBBB））））",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-100",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "克伯屈的同時學習原則，主學習指的是單元教學的知識與技能，副學習指 的是知識技能衍生的理論、觀念、態度，輔學習指的是附帶學習到的做人 處世、道德與精神意志。",
       "answer": "",
       "explanation": "",
@@ -16814,19 +16697,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2012-TPEJH-103",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案((((AAAA))))",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-104",
       "year": 2012,
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
@@ -16935,19 +16805,6 @@
     },
     {
       "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "經經經經查查查查詢詢詢詢相相相相關關關關資資資資料料料料，，，，選選選選答答答答（（（（CCCC））））、、、、（（（（DDDD））））皆皆皆皆可可可可給給給給分分分分。。。。 輔導 46 本本本本題題題題維維維維持持持持原原原原答答答答案案案案((((AAAA)))) 依據林家興、王麗文(2000)心理治療實務一書，第143~144頁描述，「心理晤 談時，沉默是允許的，也是常見的，更不必然是不好的。在晤談時，當不知 道該說什麼時，最好的做法就是什麼都不說，靜靜地看著個案，鼓勵個案繼 續說下去…。當出現過長或不適當的沉默時，治療師可以坦誠地與個案探討 沉默的意義…。治療師最容易犯錯的時候，通常是在不知道要說什麼的時候， 勉強做建議或說明結果愈說愈糟。」按題意本身為詢問選項中比較適當的做 法，故仍應維持原答案。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-112",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
       "topic": "植物學",
       "concepts": [
         "根"
@@ -16956,19 +16813,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2012-TPEJH-113",
-      "year": 2012,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "101 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本本本本題題題題維維維維持持持持原原原原答答答答案案案案（（（（CCCC））））",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2012-TPEJH-114",
       "year": 2012,
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
@@ -26687,22 +26531,6 @@
     },
     {
       "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "2 2 3",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "C": "O 與血紅素結合，形成碳醯胺基血紅素 (D) CO 會降低血紅素與 O 之結合力"
-      },
-      "id": "TCH-BIO-2013-OTH-041",
-      "year": 2013,
-      "region": "未知",
-      "school": "復興高中",
-      "source_file": "102 復興高中.pdf"
-    },
-    {
-      "type": "single_choice",
       "topic": "遺傳學",
       "concepts": [
         "血型",
@@ -28315,19 +28143,6 @@
       "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
-      "stem": "題：送分",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2013-HSMJH-044",
-      "year": 2013,
-      "region": "新竹市",
-      "school": "新竹市國中聯招",
-      "source_file": "102 新竹國中聯招.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "B 2 C 3 C 4 B 5 A",
       "answer": "",
       "explanation": "",
@@ -28501,19 +28316,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2013-TYNJH-014",
-      "year": 2013,
-      "region": "桃園市",
-      "school": "桃園市國中教師聯招",
-      "source_file": "102 桃園國中聯招.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "題：送分",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2013-TYNJH-015",
       "year": 2013,
       "region": "桃園市",
       "school": "桃園市國中教師聯招",
@@ -28887,179 +28689,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2013-OTH-089",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "植物學",
-      "concepts": [
-        "根"
-      ],
-      "stem": "附圖是某種菌根的切片圖，請問關於此圖，下面哪些敘述是對的？ C",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "此種菌根具有真菌外鞘",
-        "B": "這是內生菌根",
-        "C": "據科學家研究，大多數的維管束植物均具有此種菌根",
-        "D": "圖中，真菌菌絲侵入植物根部細胞內吸取養分，並寄生在植物體內",
-        "E": "此類菌根的形成對植物體並無多大好處。 A"
-      },
-      "id": "TCH-BIO-2013-OTH-090",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "下列哪些選項正確？ B",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "迷路位在內耳 D",
-        "B": "聽骨有三塊 E",
-        "C": "動平衡受器包含耳石和毛細胞",
-        "D": "壺腹包含嵴頂及毛細胞",
-        "E": "柯帝器包括覆膜和毛細胞。 A"
-      },
-      "id": "TCH-BIO-2013-OTH-091",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "植物學",
-      "concepts": [
-        "花",
-        "開花"
-      ],
-      "stem": "附圖為植物對光週期反應實驗，其中只有A、C、F開花，由該實驗可知： B D E",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "該植物為短日照植物",
-        "B": "接受光期刺激的部位是葉",
-        "C": "開花素經由韌皮部運輸",
-        "D": "F植株上→所指的葉片是施予短日照處理",
-        "E": "該植物若無葉片，適宜之光週期亦不開花。 A"
-      },
-      "id": "TCH-BIO-2013-OTH-092",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "分子生物學",
-      "concepts": [
-        "PCR"
-      ],
-      "stem": "PCR的操作過程如下，何者正確？ D",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "將目標DNA片段加熱，目的是要破壞鹼基之間的氫鍵 E",
-        "B": "需降溫到25℃才能再黏合引子對",
-        "C": "引子成分為RNA",
-        "D": "引子的鹼基要能和單股DNA片段的一端互補配對",
-        "E": "需添加兩種引子。 第1頁/共2頁 B"
-      },
-      "id": "TCH-BIO-2013-OTH-093",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [
-        "激素",
-        "消化"
-      ],
-      "stem": "附圖為調節消化腺激素作用的示意圖，下列哪些敘述是正確 C 的？ D",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "A為胃泌素，不須運送，直接作用在胃 E",
-        "B": "B為胃液，含有鹽酸、胃蛋白酶原和黏液",
-        "C": "C為胰液，含有碳酸氫鈉可中和胃酸",
-        "D": "D為膽囊收縮素，可刺激胰臟分泌酵素",
-        "E": "E為胰泌素，能抑制胃蠕動。 D"
-      },
-      "id": "TCH-BIO-2013-OTH-094",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "下列關於動物的性別決定，哪些正確？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "蚯蚓的性染色體為XY型，其中XX為雌性，XY為雄性",
-        "B": "蝴蝶與蛾的性染色體為ZW型，其中ZZ為雌性，ZW為雄性",
-        "C": "在人類，44＋X為女性，44＋XXY是男性；對果蠅而言，6＋X與6＋XXY皆為雌性",
-        "D": "果蠅的Y染色體與性別決定無關",
-        "E": "蜜蜂的性染色體為XO型，其中XX為雌性，XO為雄性。 A"
-      },
-      "id": "TCH-BIO-2013-OTH-095",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "植物學",
-      "concepts": [
-        "根",
-        "韌皮部"
-      ],
-      "stem": "附圖為韌皮部運輸養分示意圖，根據圖示，何者敘述有誤？ B",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "P處的膨壓較Q處高，因葉肉細胞提供葡萄糖及導管的 C 水進入的結果",
-        "B": "葉的泌液作用是由R形成的",
-        "C": "R及S皆需消耗ATP",
-        "D": "將蔗糖由篩管送至根部皮層為主動運輸",
-        "E": "R為單向向上，S的方向由供需決定。 B"
-      },
-      "id": "TCH-BIO-2013-OTH-096",
-      "year": 2013,
-      "region": "未知",
-      "school": "清水高中",
-      "source_file": "102 清水高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "物鏡測微器上1 mm寬度刻劃為100小格，在400X的顯微鏡下，可見目鏡測微器的50小格相 E 當於物鏡（載物臺）測微器的16小格。下列有關此顯微鏡測量的敘述，何者正確？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "度量玻片標本的細胞大小時，物鏡測微器須同時置於載物臺上",
-        "B": "在400X的顯微鏡下，目鏡測微器每一小格的寬度約為 3.2  m",
-        "C": "物鏡測微器的每一小格寬度約為 1  m",
-        "D": "在100X的顯微鏡下，物鏡測微器的4小格相當於目鏡測微器的 50小格",
-        "E": "在100X的顯微鏡下，目鏡測微器每一小格的寬度約為 12.8  m。 第2頁/共2頁"
-      },
-      "id": "TCH-BIO-2013-OTH-097",
       "year": 2013,
       "region": "未知",
       "school": "清水高中",
@@ -30938,19 +30567,6 @@
         "A": "CO (B)CH (C)N O (D)NO 。"
       },
       "id": "TCH-BIO-2014-STJH-017",
-      "year": 2014,
-      "region": "臺南市",
-      "school": "南區國中教師聯招",
-      "source_file": "103 南區國中聯招.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "4 2 2",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2014-STJH-018",
       "year": 2014,
       "region": "臺南市",
       "school": "南區國中教師聯招",
@@ -43584,196 +43200,12 @@
     },
     {
       "type": "single_choice",
-      "topic": "植物學",
-      "concepts": [
-        "根",
-        "葉",
-        "花"
-      ],
-      "stem": "將菠菜葉片分成甲、乙兩組，甲組置於室溫三天，乙組以 4℃處理三天，再將甲乙組分別放 入0、-6、-8、-10、-12、-14℃下處理後，將葉片取出放入水中十分鐘後，測水中花青素的含 量，得到下表之結果。根據此表，下列推論何者正確？ 水中花青素含量百分比(%)： 溫度（℃） 0 -6 -8 -10 -12 -14 甲組 5 80 92 90 93 89 乙組 2 4 5 8 10 20",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "菠菜葉片細胞的細胞膜在低溫環境有破損現象",
-        "B": "乙組的菠菜葉片細胞的液泡膜在低溫環境必定比甲組不易破裂",
-        "C": "乙組的菠菜葉片的氣孔在低溫環境必定比甲組不易控制",
-        "D": "乙組的菠菜葉片細胞的呼吸作用所產生之 ATP 在低溫環境必定比甲組低",
-        "E": "乙組的菠菜葉片細胞內所含類似抗凍劑的糖類在低溫環境必定比甲組多"
-      },
-      "id": "TCH-BIO-2016-NTNU-011",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "M acArthur及Wilson 所提出的『島嶼生物地理』模型認為，島嶼上的物種數與島嶼的大小 成正比，而與距離大陸的遠近成反比，有些生物學者認為此一模型也適用於解釋草食性生物 與其寄主間之關係。若某一植物之分布如圖所示，下列何者多樣性關係符合預期？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "c=d (B)a<f (C)d>b (D)c>b (E)a>b。"
-      },
-      "id": "TCH-BIO-2016-NTNU-012",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
       "topic": "動物學",
       "concepts": [],
       "stem": "下列敘述何者正確？ (A)在亨耳環管下降支，H2O流出而Na＋流入 (B)在亨耳環管上升支， Na＋藉由濃度差流出，不需消耗能量 (C)亨耳環管上升支流出的 Na＋會再度進入下降支 (D) 河馬的亨耳氏環管應該比駱駝的長 (E)水和尿素均由集尿管內向管外的方向移動。",
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2016-NTNU-013",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "下列何者為「擬態」？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "動物長得像植物 (B)動物的體色和環境一樣 (C)蛇的尾巴像蠕蟲般扭動",
-        "D": "無毒蜂長得像毒蜂 (E)一種毒蜂長得像另一種毒蜂"
-      },
-      "id": "TCH-BIO-2016-NTNU-014",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [
-        "肌肉",
-        "呼吸"
-      ],
-      "stem": "下列有關人體呼吸肌肉的敘述，哪些為正確的？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "吸氣時，外肋間肌收縮且橫膈向下移動",
-        "B": "吸氣時外肋間肌和內肋間肌均活動，而橫膈僅在呼氣時活動",
-        "C": "吸氣時，僅有內肋間肌收縮且橫膈向下移動",
-        "D": "呼氣時，外肋間肌收縮且橫膈向下移動",
-        "E": "平靜氣呼吸時胸腔被動收縮，但經內肋間肌收縮可完成強力呼氣 (F)吸氣時，內肋間肌收縮，然後在橫膈向上移動時完成強力吸氣"
-      },
-      "id": "TCH-BIO-2016-NTNU-015",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "植物的基本組織包括薄壁組織、厚角組織、與厚壁組織，下列相關敘述，何者正確？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "此三種組織細胞成熟時，均具有初生的細胞壁",
-        "B": "此三種組織細胞成熟時，均具有次生的細胞壁",
-        "C": "就細胞分裂能力而言：薄壁組織＞厚角組織＞厚壁組織",
-        "D": "維管束形成層分裂形成的子細胞，僅可分化為薄壁或厚壁組織細胞",
-        "E": "成熟的薄壁與厚角組織細胞均具有原生質體，而厚壁組織細胞則均不具有"
-      },
-      "id": "TCH-BIO-2016-NTNU-016",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [
-        "神經",
-        "動作電位"
-      ],
-      "stem": "人體為例，運動神經受到興奮之後所產生的動作電位會傳導至神經末梢而導致肌細胞的收 縮。下列敘述何者正確？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "抑制肌細胞上的鈉離子通道會導致肌細胞無法收縮",
-        "B": "抑制神經末梢鈉離子通道會導致肌細胞無法收縮",
-        "C": "抑制肌細胞上的乙醯膽鹼(acetylcholine)接受器會導致肌細胞無法收縮",
-        "D": "抑制肌細胞上的鈣離子通道會導致細胞外鈣離子無法流入肌細胞而使肌細胞無法收縮",
-        "E": "抑制神經末梢鈣離子通道會導致細胞外鈣離子無法流入神經細胞而使肌細胞無法收縮"
-      },
-      "id": "TCH-BIO-2016-NTNU-017",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞",
-        "受體"
-      ],
-      "stem": "在抗原呈獻細胞活化 T 輔助細胞時，需要下列何種受體/分子的參與？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "CD8 (B) CD4 (C) 第Ｉ型MHC 分子 (D) 第 II 型MHC 分子 (E) T 細胞受體"
-      },
-      "id": "TCH-BIO-2016-NTNU-018",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "下列有關配子形成過程的敘述，哪些是正確的？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "若有互換發生，則一個 2n的精母細胞會產生 4種不同的精子。",
-        "B": "n = 3 的二倍體生物所產生的配子中，三條染色體全部源自同一親代的機率為 1/8。",
-        "C": "次級卵母細胞含有初級卵母細胞染色體數的 1/2。",
-        "D": "若初級精母細胞含有十個染色體，則其中五個染色體來自父系。",
-        "E": "雖然卵母細胞經減數分裂祇產生一個卵細胞，但此卵細胞亦具遺傳歧異性。"
-      },
-      "id": "TCH-BIO-2016-NTNU-019",
-      "year": 2016,
-      "region": "臺北市",
-      "school": "國立臺灣師範大學附屬高級中學",
-      "source_file": "105 師大附中代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "植物學",
-      "concepts": [
-        "種子"
-      ],
-      "stem": "下列有關種子構造的敘述何者正確？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "黃豆的種子中有胚根、胚芽及子葉，其中子葉可提供芽生長的養分，其染色體套數為 2n",
-        "B": "雙子葉植物種子的子葉在種子萌芽後，都會隨芽的生長露出地表，且有行光合作用的能力",
-        "C": "單子葉植物的種子有胚根、胚芽、子葉及胚乳，子葉的功能多只有將胚乳的養分轉移至胚 處",
-        "D": "豆科的種子受到種皮保護，而種皮是由子房壁發育而來的",
-        "E": "木棉花的種子表面有棉絮，此毛狀物是由果實內壁衍生出來的 多重選擇題的參考答案:"
-      },
-      "id": "TCH-BIO-2016-NTNU-020",
       "year": 2016,
       "region": "臺北市",
       "school": "國立臺灣師範大學附屬高級中學",
@@ -49062,19 +48494,6 @@
       "source_file": "109 新北國中聯招.pdf"
     },
     {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "C 送分",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2020-NTPJH-031",
-      "year": 2020,
-      "region": "新北市",
-      "school": "新北市國中教師聯招",
-      "source_file": "109 新北國中聯招.pdf"
-    },
-    {
       "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
@@ -50552,19 +49971,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2021-TNNHG-056",
-      "year": 2021,
-      "region": "臺南市",
-      "school": "國立臺南女子高級中學",
-      "source_file": "110 台南女中.pdf"
-    },
-    {
-      "type": "multiple_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "承上題，你的理由是 C (4分)",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2021-TNNHG-057",
       "year": 2021,
       "region": "臺南市",
       "school": "國立臺南女子高級中學",
@@ -57343,19 +56749,6 @@
     },
     {
       "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "12 6",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2023-NTPJH-059",
-      "year": 2023,
-      "region": "新北市",
-      "school": "新北市國中教師聯招",
-      "source_file": "112 新北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
       "topic": "遺傳學",
       "concepts": [
         "血型"
@@ -58233,269 +57626,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2023-KHHJT-023",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞",
-        "細胞膜"
-      ],
-      "stem": "下列何者與神經細胞膜電位的形成無關？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "細胞膜上鈉鉀幫浦",
-        "B": "細胞內外滲透壓差",
-        "C": "細胞內外各種離子濃度差",
-        "D": "細胞膜對不同離子的通透性不一樣 Ans:B"
-      },
-      "id": "TCH-BIO-2023-KHHJT-024",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "某生的心搏周期為 0.86 秒，心搏周期的時間分配如附圖 1，下列敘述何者錯 誤？ 圖 1",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "甲－節律點直接引發心房收縮",
-        "B": "乙－房室瓣關閉而引發第一心音",
-        "C": "丙－半月瓣呈開放狀態",
-        "D": "該生的心搏與脈搏皆為每分鐘 72 次 Ans:C"
-      },
-      "id": "TCH-BIO-2023-KHHJT-025",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "圖 2 橫軸為人體不同部位的氧分壓大小，縱軸為血紅素的結氧率大小。下列 敘述何者正確？ 圖 2",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "組織代謝率大小：丙＜丁",
-        "B": "在組織丙處，血紅素所釋出的氧量為甲＋乙",
-        "C": "戊可能為肺動脈",
-        "D": "如果血液中的 pH 值降低，則血紅素結氧率的曲線會往左移 Ans:B"
-      },
-      "id": "TCH-BIO-2023-KHHJT-026",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "生態學",
-      "concepts": [
-        "生物多樣性"
-      ],
-      "stem": "下列有關生物多樣性（biodiversity）的敘述，何者錯誤？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "生物多樣性的產生與生物演化有關",
-        "B": "族群中個體數越多，則遺傳多樣性越高",
-        "C": "族群的遺傳多樣性越高，對環境的適應力越强",
-        "D": "當兩地物種豐富度相同時，其物種多樣性不一定相同",
-        "E": "當某地區的生態系多樣性增加，物種及遺傳多樣性亦可能隨之增加 Ans:B"
-      },
-      "id": "TCH-BIO-2023-KHHJT-027",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞"
-      ],
-      "stem": "有關星狀膠細胞 (astrocyte) 的說明，下列敘述何者有誤？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "能夠對神經元產生刺激型或是抑制型的反應",
-        "B": "能夠從突觸系統中擷獲神經傳遞物質",
-        "C": "具備在中樞神經系統中，進行吞噬外來入侵物質的防禦機制",
-        "D": "形成血腦障蔽",
-        "E": "具備儲存養分的功能 Ans:C"
-      },
-      "id": "TCH-BIO-2023-KHHJT-028",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞",
-        "細胞壁"
-      ],
-      "stem": "下列何種細胞最不可能具有次生細胞壁？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "石細胞",
-        "B": "假導管細胞",
-        "C": "纖維細胞",
-        "D": "薄壁細胞",
-        "E": "厚角細胞 Ans:D"
-      },
-      "id": "TCH-BIO-2023-KHHJT-029",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "植物學",
-      "concepts": [
-        "光合作用",
-        "卡爾文"
-      ],
-      "stem": "參與光合作用的酵素很多，下列何者在卡爾文循環 (Calvin cycle) 中催化二 氧化碳併入核酮糖雙磷酸？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "NADP+ reductase",
-        "B": "Rubisco",
-        "C": "ATP synthase",
-        "D": "PEP carboxylase",
-        "E": "Dehydrogenase Ans:B"
-      },
-      "id": "TCH-BIO-2023-KHHJT-030",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "人類胚胎於子宮著床時，以下哪一結構負責酵素分解子宮內膜？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "內細胞團",
-        "B": "尿膜",
-        "C": "絨毛膜",
-        "D": "羊膜",
-        "E": "滋養層 Ans:E"
-      },
-      "id": "TCH-BIO-2023-KHHJT-031",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞",
-        "有絲分裂"
-      ],
-      "stem": "植物細胞進行細胞有絲分裂，完成細胞核分裂之後，需要下列哪一構造參與 來完成細胞質分裂？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "內質網",
-        "B": "高爾基氏體",
-        "C": "紡錘體",
-        "D": "溶體",
-        "E": "分裂溝 Ans:B"
-      },
-      "id": "TCH-BIO-2023-KHHJT-032",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "multiple_choice",
-      "topic": "演化學",
-      "concepts": [
-        "親緣",
-        "演化",
-        "paraphyletic"
-      ],
-      "stem": "若目前已知甲乙丙丁戊己庚辛壬癸等十個分類群，其親緣關係如圖 3（庚辛 壬癸分別為此演化樹距其最近的節點）。請問以下哪些分類群的集合，符合 並系群 (paraphyletic group)的定義呢？ 圖 3",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "甲乙丙",
-        "B": "乙丙丁己庚辛壬",
-        "C": "乙丙壬",
-        "D": "戊己庚",
-        "E": "甲乙丙丁壬癸 Ans:BC"
-      },
-      "id": "TCH-BIO-2023-KHHJT-033",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "multiple_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞"
-      ],
-      "stem": "細胞衰老（Cellular senescence）的過程特徵，包含下列幾項?",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "端粒減短",
-        "B": "細胞自噬功能增加",
-        "C": "染色質收縮，細胞核的體積變小",
-        "D": "新陳代謝速率減慢",
-        "E": "細胞膜通透性降低 Ans:ADE"
-      },
-      "id": "TCH-BIO-2023-KHHJT-034",
-      "year": 2023,
-      "region": "高雄市",
-      "school": "高雄市公立高中教師甄選聯招",
-      "source_file": "112 高雄聯招.pdf"
-    },
-    {
-      "type": "multiple_choice",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞",
-        "細胞凋亡",
-        "apoptosis"
-      ],
-      "stem": "下列哪些是細胞凋亡（apoptosis）造成的結果？",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "A": "染色體破碎",
-        "B": "神經系統的退行性病變，如老年性癡呆",
-        "C": "DNA 隨機降解",
-        "D": "造成化膿",
-        "E": "發育過程中眼睛玻璃體和晶狀體的細胞死亡 Ans:BE"
-      },
-      "id": "TCH-BIO-2023-KHHJT-035",
       "year": 2023,
       "region": "高雄市",
       "school": "高雄市公立高中教師甄選聯招",
@@ -60207,22 +59337,6 @@
         "A": "大部分可和血紅素結合 (B) 藉血漿中酵素的作用，使CO + HO → HCO"
       },
       "id": "TCH-BIO-2024-TYNWLA-033",
-      "year": 2024,
-      "region": "桃園市",
-      "school": "國立武陵高級中學（代理）",
-      "source_file": "113 武陵代理.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "2 2 3",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "C": "在肺泡微血管HCO → CO + HO (D) 微血管CO 以促進性擴散排至肺泡中"
-      },
-      "id": "TCH-BIO-2024-TYNWLA-034",
       "year": 2024,
       "region": "桃園市",
       "school": "國立武陵高級中學（代理）",
@@ -62298,25 +61412,6 @@
         "B": "光反應過程中會產生C H O"
       },
       "id": "TCH-BIO-2024-TPEJH-049",
-      "year": 2024,
-      "region": "臺北市",
-      "school": "臺北市國中教師聯招",
-      "source_file": "113 台北國中聯招.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "12 6",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "C": "多數營養物質的吸收發生在結腸",
-        "D": "患有肝衰竭的人尤其會出現脂肪的消化和吸收問題",
-        "A": "胰臟產生消化酵素和膽汁",
-        "B": "葡萄糖的化學消化開始於口腔"
-      },
-      "id": "TCH-BIO-2024-TPEJH-050",
       "year": 2024,
       "region": "臺北市",
       "school": "臺北市國中教師聯招",
@@ -77888,176 +76983,6 @@
       "type": "short_answer",
       "topic": "動物學",
       "concepts": [],
-      "stem": "nonsense mutation",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-053",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "systemic acquired resistance",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-054",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "Neutral Evolution",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-055",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "Relative Refractory Period",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-056",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "哈溫平衡(Hardy–Weinberg principle)的內涵為何？對生物學研究有哪些意義？",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-057",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞"
-      ],
-      "stem": "為什麼邦克列酸(Bongkrekic acid)會造成細胞失去活性？",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-058",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [
-        "神經",
-        "腎上腺"
-      ],
-      "stem": "學生在動物生理學上針對課程內容做出的提問，試以老師角度解答學生問題。 (1)促腎上腺皮質素（ACTH）能促進腎上腺皮質分泌腎上腺皮質素。但腎上腺皮質素有兩類，包含了礦物皮質素 （mineralocorticoids）與糖皮質素（glucocorticoids），這兩類都會因促腎上腺皮質素刺激而分泌嗎?（2分） (2)同學拿著試題本過來，指著試題中一個選項＂人體交感神經分泌乙醯膽鹼刺激腎上腺髓質產生腎上腺素＂問到： 「這選項解答說是正確！但交感神經的節後神經元不是分泌正腎上腺素刺激動器嗎？這題答案是不是有錯了？」（2 分）",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-059",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [
-        "紅血球",
-        "生殖"
-      ],
-      "stem": "鐮型紅血球症由一對等位基因 A（正常血紅素）與S（鐮型血紅素）控制，在某瘧疾流行地區，研究顯示此三種基因 型能活到成年且具生殖能力的機率（W）： 基因型 活到成年且具生殖能力的機率（W） AA 0.6 AS 0.95 SS 0.0 在該地區某族群中成年具生殖能力者進行查後發現， 56% 的個體患有鐮型貧血症。若該族群內隨機交配產生下一 世代，試推算下一世代族群成年後 S 等位基因的頻率為何?(計算過程與答案皆4捨5入到小數點後第三位)。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-060",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "試結合本校辦學特色「雙語國際、科技創新及人文永續」相關內涵，以「生物體的能量與代謝」為主題規劃一個為 期九週、每週兩節的生物探究與實作教學模組。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-061",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "嘗試為學完高中生物所有內容之高三學生整理「人體血壓調控」筆記。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-062",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "演化學",
-      "concepts": [
-        "天擇",
-        "演化",
-        "natural selection"
-      ],
-      "stem": "請用硬幣與骰子設計一個簡易的遊戲，透過遊戲讓同學體會並了解天擇( natural selection)與漂變( genetic drift)兩種不 同的演化機制對族群造成的影響。需說明此遊戲的形式是以個人、分組或全班的模式執行，並清楚說明遊戲規則、 預期結果與結果所要帶給學生的背後含意。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-063",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "細胞學",
-      "concepts": [
-        "細胞"
-      ],
-      "stem": "小分子核糖核酸(micro-RNA)相關研究近年來蓬勃發展，試解釋 micro-RNA如何影響細胞的生理活性（2分），並以 論文摘要的主旨（如附）或相關知識為題幹仿照現行分科測驗的模式設計一個單選題與一個多選題，需附上答案與 詳解。 4 Among different age groups, middle-aged individuals are particularly susceptible to obesity, with a 22% higher risk of all-cause mortality. However, the underlying mechanisms remain unclear. In this study, we identify adipose progenitor cells (APCs) in the white adipose tissue (WAT) of middle-aged subjects as potential causes of midlife obesity. Specifically, the extracellular vesicles (EVs) derived from APCs display an impaired ability to mitigate the inflammaging of adipose tissue macrophages (ATMs) in middle-aged individuals. Mechanistically, these EVs, lacking mi R-145-5p, fail to suppress the expression of L-selectin in ATMs, thereby facilitating their M1 program via the NF-κB signaling pathway. In contrast, EVs from young APCs effectively inhibit M1 macrophage polarization. Accordingly, targeted liposomes are designed to deliver miR-145-5p mimics to ATMs, which effectively prevent the obesity in middle-aged mice. Collectively, our findings highlight the role of APC-derived EVs in midlife obesity and propose miR-145-5p as a promising therapeutic target for clinical applications.（摘自 Zhou, Q., Gao, J., Wu, G. et al. Adipose progenitor cell-derived extracellular vesicles suppress macrophage M1 program to alleviate midlife obesity. Nat Commun 16, 2743 (2025). https://doi.org/10.1038/s41467-025-57444-y） 翻譯：obesity 肥胖症／adipose progenitor cells 脂肪前驅幹細胞／mitigate 緩解／facilitating 促進／M1 macrophage polarization M1 型巨噬細胞極化，與發炎反應有關 5",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2025-TNNSL-064",
-      "year": 2025,
-      "region": "臺南市",
-      "school": "國立沙崙高級中學",
-      "source_file": "114 沙崙高中.pdf"
-    },
-    {
-      "type": "short_answer",
-      "topic": "動物學",
-      "concepts": [],
       "stem": "annuales，biennials，perennials 植物的特點",
       "answer": "",
       "explanation": "",
@@ -83526,22 +82451,6 @@
     },
     {
       "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "2 2 2",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "D": "NADH→電子傳遞鏈→O (E) H O→NADPH→糖 2 2"
-      },
-      "id": "TCH-BIO-2026-TPEDZ-161",
-      "year": 2026,
-      "region": "臺北市",
-      "school": "臺北市立大直高級中等學校",
-      "source_file": "115 大直高中 2.pdf"
-    },
-    {
-      "type": "single_choice",
       "topic": "細胞學",
       "concepts": [
         "細胞"
@@ -84937,45 +83846,6 @@
     },
     {
       "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本試題共兩部分：選擇題及非選擇題，共計 100 分。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2026-TPEDZ-248",
-      "year": 2026,
-      "region": "臺北市",
-      "school": "臺北市立大直高級中等學校",
-      "source_file": "115 大直高中 2.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "選擇題請用 2B 軟心鉛筆在答案卡劃記，非選擇題限用藍 色、黑色原子筆或鋼筆在答案本上作答，但繪圖時得使 用黑色鉛筆。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2026-TPEDZ-249",
-      "year": 2026,
-      "region": "臺北市",
-      "school": "臺北市立大直高級中等學校",
-      "source_file": "115 大直高中 2.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "本科不可以使用電子計算器。",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2026-TPEDZ-250",
-      "year": 2026,
-      "region": "臺北市",
-      "school": "臺北市立大直高級中等學校",
-      "source_file": "115 大直高中 2.pdf"
-    },
-    {
-      "type": "single_choice",
       "topic": "遺傳學",
       "concepts": [
         "染色體",
@@ -85826,21 +84696,6 @@
       "answer": "",
       "explanation": "",
       "id": "TCH-BIO-2026-TPEDZ-300",
-      "year": 2026,
-      "region": "臺北市",
-      "school": "臺北市立大直高級中等學校",
-      "source_file": "115 大直高中 2.pdf"
-    },
-    {
-      "type": "essay",
-      "topic": "分子生物學",
-      "concepts": [
-        "RNA"
-      ],
-      "stem": "vernalization",
-      "answer": "",
-      "explanation": "",
-      "id": "TCH-BIO-2026-TPEDZ-301",
       "year": 2026,
       "region": "臺北市",
       "school": "臺北市立大直高級中等學校",
@@ -88597,22 +87452,6 @@
         "A": "NADPH→H O→糖 (B) H O→電子傳遞鏈→CO (C) H O→葉綠素→NADH"
       },
       "id": "TCH-BIO-2026-TYNHS-018",
-      "year": 2026,
-      "region": "桃園市",
-      "school": "桃園市立桃園高級中學",
-      "source_file": "115 桃園高中.pdf"
-    },
-    {
-      "type": "single_choice",
-      "topic": "動物學",
-      "concepts": [],
-      "stem": "2 2 2",
-      "answer": "",
-      "explanation": "",
-      "options": {
-        "D": "NADH→電子傳遞鏈→O (E) H O→NADPH→糖 2 2"
-      },
-      "id": "TCH-BIO-2026-TYNHS-019",
       "year": 2026,
       "region": "桃園市",
       "school": "桃園市立桃園高級中學",

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>生物教師甄試題庫</title>
+<script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.min.js"></script>
 <style>
   :root {
     --bg: #f5f7fa;
@@ -143,6 +144,42 @@
   .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
   .empty .icon { font-size: 3rem; margin-bottom: 12px; }
 
+  /* ── 勾選模式 ── */
+  .q-checkbox-wrap { display: none; align-items: center; padding-right: 10px; flex-shrink: 0; }
+  .select-mode .q-checkbox-wrap { display: flex; }
+  .q-checkbox { width: 18px; height: 18px; cursor: pointer; accent-color: var(--primary); }
+  .select-mode .q-card.selected { border: 2px solid var(--primary); background: color-mix(in srgb, var(--primary) 5%, var(--surface)); }
+
+  /* ── 匯出列 ── */
+  .export-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--surface); border-top: 2px solid var(--primary);
+    padding: 12px 20px; display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.12); z-index: 200;
+    transform: translateY(100%); transition: transform .25s ease;
+  }
+  .export-bar.show { transform: translateY(0); }
+  .export-bar .sel-count { font-weight: 700; color: var(--primary); margin-right: auto; }
+  .btn-export { padding: 8px 16px; border-radius: 8px; border: none;
+    font-size: .85rem; font-weight: 600; cursor: pointer; transition: opacity .15s; }
+  .btn-export:hover { opacity: .85; }
+  .btn-pdf  { background: #ef4444; color: #fff; }
+  .btn-docx { background: #2563eb; color: #fff; }
+  .btn-clear { background: var(--bg); color: var(--text-muted);
+    border: 1px solid var(--border); }
+
+  /* ── 列印 ── */
+  @media print {
+    header, .filter-bar, #stats-row, .export-bar, #empty { display: none !important; }
+    body { background: #fff !important; }
+    .q-list { display: block !important; }
+    .q-card { display: none !important; box-shadow: none !important;
+      border: 1px solid #ccc !important; margin-bottom: 16px; break-inside: avoid; }
+    .q-card.print-selected { display: block !important; }
+    .q-body { display: block !important; }
+    .q-chevron, .q-checkbox-wrap { display: none !important; }
+  }
+
   /* ── RWD ── */
   @media (max-width: 600px) {
     .filter-bar { padding: 10px 12px; }
@@ -161,6 +198,7 @@
   <div class="header-right">
     <button class="btn-icon" onclick="toggleAll(true)">全展開</button>
     <button class="btn-icon" onclick="toggleAll(false)">全收合</button>
+    <button class="btn-icon" id="select-btn" onclick="toggleSelectMode()">勾選</button>
     <button class="btn-icon" id="theme-btn" onclick="toggleTheme()">🌙</button>
   </div>
 </header>
@@ -200,8 +238,18 @@
   </div>
 </main>
 
+<!-- 匯出列 -->
+<div class="export-bar" id="export-bar">
+  <span class="sel-count" id="sel-count">已選 0 題</span>
+  <button class="btn-export btn-clear" onclick="clearSelection()">清除</button>
+  <button class="btn-export btn-pdf"  onclick="exportPDF()">匯出 PDF</button>
+  <button class="btn-export btn-docx" onclick="exportDOCX()">匯出 DOCX</button>
+</div>
+
 <script>
 let ALL = [];
+let selectedIds = new Set();
+let selectMode = false;
 
 const TYPE_LABEL = {
   single_choice: '單選', multiple_choice: '多選',
@@ -322,8 +370,12 @@ function render() {
           `<span class="concept-tag">${esc(c)}</span>`).join('')}</div>`
       : '';
 
-    return `<div class="q-card" id="card-${q.id}">
-      <div class="q-head" onclick="toggleCard('${q.id}')">
+    const isSelected = selectedIds.has(q.id);
+    return `<div class="q-card${isSelected?' selected':''}" id="card-${q.id}">
+      <div class="q-head" onclick="handleCardClick(event,'${q.id}')">
+        <div class="q-checkbox-wrap">
+          <input type="checkbox" class="q-checkbox" ${isSelected?'checked':''} onclick="event.stopPropagation();toggleSelect('${q.id}')">
+        </div>
         <div style="flex:1; min-width:0;">
           <div class="q-tags">
             <span class="tag tag-${esc(q.topic)}">${esc(q.topic)}</span>
@@ -345,12 +397,128 @@ function render() {
   }).join('');
 }
 
+function handleCardClick(event, id) {
+  if (selectMode) {
+    toggleSelect(id);
+  } else {
+    toggleCard(id);
+  }
+}
 function toggleCard(id) {
   document.getElementById('card-' + id)?.classList.toggle('open');
 }
 function toggleAll(open) {
   document.querySelectorAll('.q-card').forEach(c =>
     open ? c.classList.add('open') : c.classList.remove('open'));
+}
+
+// ── 勾選模式 ──
+function toggleSelectMode() {
+  selectMode = !selectMode;
+  document.body.classList.toggle('select-mode', selectMode);
+  document.getElementById('select-btn').textContent = selectMode ? '✕ 取消' : '勾選';
+  if (!selectMode) { clearSelection(); }
+}
+
+function toggleSelect(id) {
+  if (selectedIds.has(id)) {
+    selectedIds.delete(id);
+  } else {
+    selectedIds.add(id);
+  }
+  const card = document.getElementById('card-' + id);
+  if (card) {
+    card.classList.toggle('selected', selectedIds.has(id));
+    const cb = card.querySelector('.q-checkbox');
+    if (cb) cb.checked = selectedIds.has(id);
+  }
+  updateExportBar();
+}
+
+function updateExportBar() {
+  const bar = document.getElementById('export-bar');
+  document.getElementById('sel-count').textContent = `已選 ${selectedIds.size} 題`;
+  bar.classList.toggle('show', selectedIds.size > 0);
+}
+
+function clearSelection() {
+  selectedIds.clear();
+  document.querySelectorAll('.q-card.selected').forEach(c => {
+    c.classList.remove('selected');
+    const cb = c.querySelector('.q-checkbox');
+    if (cb) cb.checked = false;
+  });
+  updateExportBar();
+}
+
+// ── 匯出 PDF ──
+function exportPDF() {
+  const selected = ALL.filter(q => selectedIds.has(q.id));
+  if (!selected.length) return;
+
+  // 標記選中題目供列印
+  document.querySelectorAll('.q-card').forEach(c => c.classList.remove('print-selected'));
+  selected.forEach(q => {
+    const card = document.getElementById('card-' + q.id);
+    if (card) { card.classList.add('print-selected', 'open'); }
+  });
+  window.print();
+  // 列印後移除標記
+  setTimeout(() => {
+    document.querySelectorAll('.q-card').forEach(c => c.classList.remove('print-selected'));
+  }, 1000);
+}
+
+// ── 匯出 DOCX ──
+async function exportDOCX() {
+  const selected = ALL.filter(q => selectedIds.has(q.id));
+  if (!selected.length) return;
+
+  if (!window.docx) { alert('DOCX 函式庫載入中，請稍後再試'); return; }
+  const { Document, Paragraph, TextRun, HeadingLevel, Packer, AlignmentType } = window.docx;
+
+  const children = [];
+  children.push(new Paragraph({
+    children: [new TextRun({ text: '生物教師甄試題目', bold: true, size: 32 })],
+    alignment: AlignmentType.CENTER,
+    spacing: { after: 400 },
+  }));
+
+  selected.forEach((q, i) => {
+    children.push(new Paragraph({
+      children: [new TextRun({ text: `${i+1}. ${q.stem}`, bold: true })],
+      spacing: { before: 200, after: 80 },
+    }));
+    if (q.options) {
+      Object.entries(q.options).forEach(([k, v]) => {
+        children.push(new Paragraph({
+          children: [new TextRun(`（${k}）${v}`)],
+          indent: { left: 360 },
+          spacing: { after: 40 },
+        }));
+      });
+    }
+    if (q.answer) {
+      children.push(new Paragraph({
+        children: [new TextRun({ text: `答案：${q.answer}`, color: '2563EB' })],
+        indent: { left: 360 },
+        spacing: { after: 40 },
+      }));
+    }
+    children.push(new Paragraph({
+      children: [new TextRun({ text: `【${q.topic}】${q.school} 民${q.year-1911}年`, color: '888888', size: 18 })],
+      indent: { left: 360 },
+      spacing: { after: 160 },
+    }));
+  });
+
+  const doc = new Document({ sections: [{ properties: {}, children }] });
+  const blob = await Packer.toBlob(doc);
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = `生物甄試題目_${selected.length}題.docx`;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 // ── 深色模式 ──
