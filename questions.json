@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "last_updated": "2026-04-24",
-    "total_questions": 5686,
+    "total_questions": 5718,
     "topics_supported": [
       "細胞學",
       "遺傳學",
@@ -99490,6 +99490,513 @@
       "region": "高雄市",
       "school": "高雄市立鳳山高級中學",
       "source_file": "115 鳳山高中.pdf"
+    },
+    {
+      "type": "essay",
+      "topic": "遺傳學",
+      "concepts": [
+        "顯性",
+        "隱性",
+        "染色體"
+      ],
+      "stem": "假設在一個符合哈溫平衡族群中，某一個性別相關疾病是由單一個位於體染色體上的基因突變所致，因受性激素影響而使此等位基因在男性中，顯性會發病，但在女性中卻為隱性會發病。此族群中 36% 的男性是病人，請問族群中該基因的： (1) 顯性等位基因頻率 (2) 隱性等位基因頻率 (3) 異型合子比例 (4) 女性中的病人的比例。",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TCH1-017",
+      "year": 2026,
+      "region": "臺中市",
+      "school": "臺中市立臺中第一高級中等學校",
+      "source_file": "115 台中一中.md"
+    },
+    {
+      "type": "essay",
+      "topic": "細胞學",
+      "concepts": [
+        "細胞",
+        "粒線體"
+      ],
+      "stem": "**【一母誕下兩種兒子：收穫蟻的奇異繁殖策略】** 在自然界中，母親通常會誕下同種的後代，然而西班牙收穫蟻（Messor ibericus）卻展現出一種極端而特殊的繁殖方式：同一隻蟻后，竟能同時生下兩個不同物種的雄蟻。這一現象顛覆了我們對物種界線與生殖隔離的理解。 研究顯示，M. ibericus 的蟻后除了能產生屬於自身物種的雄蟻外，還能誕下另一物種：Messor structor 的雄蟻。更令人驚訝的是，這兩類雄蟻雖然來自同一母親，卻在基因組上分屬於早已分化超過五百萬年的不同物種。這背後的秘密在於一種特殊的繁殖模式：跨種單性複製，其核心結合了「雄源生殖」（androgenesis）與「卵寄生」（ova parasitism）。 若蟻后產生未受精卵，卵子可直接發育成屬於 M. ibericus 的雄蟻，這些雄蟻是單倍體，僅帶有母系的細胞核基因。然而，當卵子與 M. structor 的精子結合時，母系細胞核基因會被排除，留下的只有父方基因。這便是雄源生殖，胚胎的細胞核 DNA 完全來自父方，而母方僅提供細胞質與粒線體。由於這個過程依賴母蟻的卵子卻不使用母方基因，因此也被視為卵寄生。結果就是同一隻母親會誕下兩種雄蟻：一種屬於自己物種，另一種則幾乎完全是另一物種的「複製品」。 這一發現挑戰了科學家對跨種繁殖的傳統認知。在大多數情況下，跨種後代往往不具繁殖力，甚至無法存活。然而在收穫蟻的例子中，跨種繁殖相當成功，對社會性昆蟲演化的研究而言，這提供了全新的視角。（文章摘自臺師大生態演化組臉書，並經過 AI 與命題者潤飾） (1) 這兩種 Messor 屬的螞蟻既然可以行有性生殖並產生後代，為何視為兩個不同的種？(3 分) (2) 請依照上文命一題多選題，並寫下詳解。(5 分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TCH1-022",
+      "year": 2026,
+      "region": "臺中市",
+      "school": "臺中市立臺中第一高級中等學校",
+      "source_file": "115 台中一中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "本試題共兩部分：選擇題及非選擇題，共計 100 分。",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHYS-001",
+      "year": 2026,
+      "region": "嘉義市",
+      "school": "嘉義市私立嘉義科學實驗中學",
+      "source_file": "115 嘉科實中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "選擇題請用 2B 鉛筆在答案卡劃記；非選擇題限用藍、黑色原子筆在答案本上作答。",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHYS-002",
+      "year": 2026,
+      "region": "嘉義市",
+      "school": "嘉義市私立嘉義科學實驗中學",
+      "source_file": "115 嘉科實中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "本科不可以使用電子計算器。 一、單選題（每題 5 分，共 20 分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHYS-003",
+      "year": 2026,
+      "region": "嘉義市",
+      "school": "嘉義市私立嘉義科學實驗中學",
+      "source_file": "115 嘉科實中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "遺傳學",
+      "concepts": [
+        "顯性",
+        "隱性",
+        "族群遺傳",
+        "Hardy-Weinberg",
+        "基因型"
+      ],
+      "stem": "哈溫定律與族群遺傳（10 分） 單一對偶基因遺傳的某植物花色，紅花為顯性（R），白花為隱性（r）。在某一族群的基因庫中，等位基因 R 佔 70%。 (1) 依據哈溫定律，此族群中各種基因型個體所佔的百分比？（請列出或說明計算過程）（3 分） (2) 假設在此植物生存範圍內的植物個體數有 1000 株，依據哈溫定律，試計算花色各表現型的個體數為何？（請列出或說明計算過程）（2 分） (3) 請說明維持哈溫定律平衡（Hardy-Weinberg equilibrium）的族群需要符合哪些條件？（5 分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHYS-012",
+      "year": 2026,
+      "region": "嘉義市",
+      "school": "嘉義市私立嘉義科學實驗中學",
+      "source_file": "115 嘉科實中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "植物學",
+      "concepts": [
+        "果實"
+      ],
+      "stem": "植物果實發育、心皮與胎座（10 分） 下圖為植物的果實的心皮與胎座的示意圖，試回答下列問題： 此處有原始解剖示意圖。 * 圖 A：中軸胎座（多心皮），具中軸分隔。 * 圖 B：中央獨立胎座。 * 圖 C：側膜胎座（多心皮），胚珠附著於子房壁。 * 標註 甲（胚珠）與 乙（子房壁/果皮）。 (1) 何謂心皮（Carpel）？（2 分） (2) 請以發育的過程說明「中軸胎座」及「側膜胎座」分別是如何形成的。（3 分） (3) 甲和乙分別代表的果實中的甚麼器官或構造？（2 分） (4) 請分別舉一個「三心皮」的 A 果實、B 果實、C 果實案例。（3 分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHYS-014",
+      "year": 2026,
+      "region": "嘉義市",
+      "school": "嘉義市私立嘉義科學實驗中學",
+      "source_file": "115 嘉科實中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "酵素活性與本氏液定量實驗（15 分） 文蛤晶桿體含有豐富的澱粉酶。定義活性單位為：在固定溫度及 pH 下，每分鐘可催化產出 1 微莫耳（ ）產物的活性。 某生進行實驗：將 麥芽糖進行 3 次的二倍率稀釋（1-4 管），第 5 管為水。加入本氏液加熱 3 分鐘，觀察顏色變化。 接著取出 10mg 晶桿體，加水研磨至 1mL。取萃取液加入 1mL 澱粉液作用 10 分鐘後，取 1mL 進行本氏液測試。結果顯示顏色與前述第 3 管（第三次稀釋管）最相近。 (1) 請說明 1 至 5 管的顏色應為何？（4 分） (2) 請計算此晶桿體每毫克（mg）的酵素活性單位是多少？（請說明計算過程）（8 分） (3) 本實驗為什麼要用「產生多少微莫耳產物」來計算活性單位，而不能用「分解多少微莫耳反應物」來計算？（3 分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHYS-015",
+      "year": 2026,
+      "region": "嘉義市",
+      "school": "嘉義市私立嘉義科學實驗中學",
+      "source_file": "115 嘉科實中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [
+        "循環",
+        "呼吸"
+      ],
+      "stem": "附圖為玉米 (Zea mays) 葉片的橫切面構造，請回答以下問題： > 此處有原始圖表（玉米葉片橫切面），請預留預覽位元。 * (1) 在右圖標示出何處為 **Kranz anatomy**？(必要時可以文字輔助說明；1分) * (2) 玉米為一種 C4 植物。請從固碳酵素與葉片組織結構兩個面向說明：C4 植物透過什麼方式減少光呼吸作用的發生？(4分) * (3) 請說明：Kranz anatomy 的結構及內部的胞器特色，如何營造有效進行卡爾文循環的環境條件？(2分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TPEDZ-005",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "臺北市立大直高級中等學校",
+      "source_file": "115 大直高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "遺傳學",
+      "concepts": [
+        "血型",
+        "ABO",
+        "遺傳"
+      ],
+      "stem": "人類 ABO 血型的檢測為免疫章節安排的實驗，也是生物性社團課程中常出現的實驗。請回答以下問題： * (1) 學生認為：「ABO 血型的遺傳模式和 MN 血型的遺傳模式是相同的」。請分析此迷思概念的成因，並簡述你在課堂中的解決策略。(3分) * (2) 若學生表明要在課程中進行 ABO 血型檢測的實驗。除了提點教學重點，你會提醒哪些實驗安全注意事項？(2分) * (3) 若利用市售抗原試劑檢測 ABO 血型，「孟買血型」的人總是會檢測出 O 型。請解釋為何會發生此種情況？(3分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TPEDZ-006",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "臺北市立大直高級中等學校",
+      "source_file": "115 大直高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "分子生物學",
+      "concepts": [
+        "操縱組",
+        "基因表現"
+      ],
+      "stem": "在基因表現調控的課程段落，除了介紹大腸桿菌的乳糖操縱組，亦會補充介紹色胺酸操縱組，同時引導學生思考點突變對基因表現結果的影響。請回答以下問題： * (1) 請畫出「色胺酸操縱組」，並呈現其在「無法表現」時，色胺酸所扮演的角色。(4分) * (2) 說明在「色胺酸操縱組」當中，有多少個 **open reading frame (ORF)**？(2分) * (3) 在「色胺酸操縱組」中，第一個構造基因若發生 **nonsense mutation**，請解釋：是否會影響其他構造基因的表現？(3分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TPEDZ-007",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "臺北市立大直高級中等學校",
+      "source_file": "115 大直高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "自由潛水（Breath-hold diving）為近年盛行的極限運動。請回答以下相關的問題： * (1) 人體在潛水時會誘發潛水反射，請繪圖呈現潛水反射的反射弧，並指出潛水後的心跳速率變動與體內血流分配。(5分) * (2) 學習自由潛水的第一道關卡是靜止狀態下憋氣 2 分鐘。請從結構與人體生理面向，說明如何透過訓練延長憋氣的時間？(2分) * (3) **Hypoxic blackout** 是在自由潛水過程中，造成溺水意外的其中一項原因。請說明：何謂 hypoxic blackout？而為何憋氣潛水前的過度換氣（hyperventilation）行為，會提升風險？(3分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TPEDZ-008",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "臺北市立大直高級中等學校",
+      "source_file": "115 大直高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "遺傳學",
+      "concepts": [
+        "ABO",
+        "phenotype"
+      ],
+      "stem": "以下為一篇近期發表的研究摘要，請閱讀後回答問題： > Paternal exercise influences exercise capacity and metabolic health of offspring, but the underlying mechanisms remain poorly understood. We demonstrate that offspring sired by exercise-trained fathers display intrinsic exercise adaptations and improved metabolic parameters compared with those sired by sedentary fathers. Injecting sperm small RNAs from exercised fathers into normal zygotes recapitulates exercise-trained phenotypes in offspring at the behavioral, metabolic, and molecular levels. Mechanistically, exercise training and muscular PGC-1$\\alpha$ overexpression remodel sperm microRNAs, which directly suppress nuclear receptor corepressor 1 (NCoR1), a functional antagonist of PGC-1$\\alpha$, in early embryos, thereby reprogramming transcriptional networks to promote mitochondrial biogenesis and oxidative metabolism. Overall, this study underscores a causal role for paternal PGC-1$\\alpha$, sperm microRNAs, and embryonic NCoR1 in transmitting exercise-induced phenotypes and metabolic adaptations to offspring. * (1) 根據摘要，研究團隊使用了哪兩項關鍵的實驗設計（或觀察）？而這些實驗結果如何導向本篇論文的結論？(5分) * (2) 在本篇論文摘要中提及：microRNAs 會抑制胚胎內 NCoR1 的表現。請繪圖解釋其相關機制，並進一步以圖像化資訊表達 NCoR1 與 PGC-1$\\alpha$ 的關聯性。(3分) * (3) 如果你要將此篇研究放在高中選修課程中做補充介紹，你會挑選哪個教學段落？簡述你會如何融入課程？(2分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TPEDZ-013",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "臺北市立大直高級中等學校",
+      "source_file": "115 大直高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "分子生物學",
+      "concepts": [
+        "啟動子",
+        "操縱組",
+        "promoter"
+      ],
+      "stem": "細菌代謝與操縱組 分子 F 是細菌生長必需養分。反應式如下： 。酵素 a, b, c 位在相同操縱組中。 此處為操縱組示意圖。 ①: 調節基因 (Regulatory gene) ③: 啟動子 (Promoter) ⑤: 操縱子 (Operator) (1) 請標示出操縱組中 ①、③ 及 ⑤ 的名稱： * ①: 7 * ③: 8 * ⑤: 9 (2) 當蛋白質 ② 與分子 ④ 結合後，會結合到位置 ⑤。 * 蛋白質 ② 是抑制蛋白或誘導蛋白？ 10 * 分子 ④ 是反應式中哪一種分子？ 11 (3) 若基因突變導致酵素 b 失去活性，酵素 c 是否有活性？ 12 (4) 承上，突變株可生長在單獨添加哪幾種分子的培養基中？ 13",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-NTNU-024",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "國立臺灣師範大學附屬高級中學",
+      "source_file": "115 師大附中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "生態學",
+      "concepts": [
+        "族群"
+      ],
+      "stem": "哈溫定律計算 理想族群中，等位基因 頻率分別為 0.3, 0.5, 0.2。 (1) 異型合子所佔比例為何？ 14 (2) 經過 5 個世代後， 的頻率為何？ 15 (3) 經過 10 個世代發生大災變，僅剩 5 隻 個體，此時 的頻率為何？ 16",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-NTNU-025",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "國立臺灣師範大學附屬高級中學",
+      "source_file": "115 師大附中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "植物學",
+      "concepts": [
+        "莖",
+        "葉",
+        "phloem"
+      ],
+      "stem": "植物解剖構造辨識 此處有單子葉植物莖部橫切面顯微照片。 甲：薄壁細胞 (Parenchyma) 乙：導管 (Vessel) 丙：篩管 (Sieve tube) 丁：韌皮纖維 (Phloem fiber) (1) 請問下圖是何種植物的哪個部位的橫切面？ 17 (2) 填寫圖中細胞名稱。 * 甲：18 * 乙：19 * 丙：20 * 丁：21",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-NTNU-026",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "國立臺灣師範大學附屬高級中學",
+      "source_file": "115 師大附中.md"
+    },
+    {
+      "type": "single_choice",
+      "topic": "演化學",
+      "concepts": [
+        "自然選擇",
+        "演化"
+      ],
+      "stem": "腦部構造辨識 此處為人腦縱切面示意圖。 22：胼胝體 (Corpus callosum) 23：視丘 (Thalamus) 24：下視丘 (Hypothalamus) 25：橋腦 (Pons) * 22：22 * 23：23 * 24：24 * 25：25 三、問答題（每題 25 分，共 100 分） 1. 蘚苔植物作為植物演化從水生過渡至陸生的重要類群，請以土馬騌與地錢為例，圖示並文字說明各生活史。 2. 請圖示並文字說明人體如何進行二氧化碳的運送（包括碳酸氫根離子、氨基甲酸血紅素等形式）。 3. 演化生物學自達爾文提出自然選擇後，歷經多次學說整合。請詳述並比較二十世紀後陸續發展出數個重要的理論學派（如現代綜合論、間斷平衡說等）。 4. 台灣擁有極高的單位面積生物多樣性。請規劃一趟「三天兩夜」的生態考察營隊，詳述應考量的各種細節（含考察地點、觀查對象、教學目標、安全防範等）。 參考答案 一、多重選擇題 題號 答案 題號 答案 題號 答案 題號 答案 題號 答案 1 AB 6 BE 11 ACE 16 AE 21 ABE 2 BE 7 BE 12 BCE 17 BD 22 ACE 3 BCD 8 AC 13 ACD 18 ABD 23 BCD 4 AD 9 BDE 14 BCD 19 ADE 24 BD 5 ACE 10 ADE 15 DE 20 BCD 25 AD 二、填充題 題號 答案 題號 答案 題號 答案 題號 答案 題號 答案 1 + 6",
+      "answer": "",
+      "explanation": "",
+      "options": {
+        "A": "和 B 抗原 10 抑制蛋白 15 0.3 20 篩管細胞 25 橋腦",
+        "C": "D 18 薄壁細胞 23 視丘 4 + 9 操縱子 14 0.62(62%) 19 導管細胞 24 下視丘 5"
+      },
+      "id": "TCH-BIO-2026-NTNU-027",
+      "year": 2026,
+      "region": "臺北市",
+      "school": "國立臺灣師範大學附屬高級中學",
+      "source_file": "115 師大附中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "本試題共分三部分：複選題、名詞解釋、申論題。",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHHG-001",
+      "year": 2026,
+      "region": "彰化縣",
+      "school": "彰化縣立彰化女子高級中學",
+      "source_file": "115 彰化女中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "非選擇題請用藍、黑色原子筆或鋼筆作答。 ## **一、複選題 15 題（每題 2 分，共 30 分，全對才給分）**",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHHG-003",
+      "year": 2026,
+      "region": "彰化縣",
+      "school": "彰化縣立彰化女子高級中學",
+      "source_file": "115 彰化女中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [
+        "神經",
+        "肌肉",
+        "內分泌",
+        "激素"
+      ],
+      "stem": "**腸道激素與減重藥物（12 分）** 俗稱「瘦瘦針」的 Semaglutide 核心成分為 GLP-1 受體促效劑。GLP-1 具有促進胰島素分泌、增加飽足感及延緩胃排空等功能。 (1) 當食糜由胃進入十二指腸時，身體如何透過神經與內分泌機制調節胃排空速率？(4 分) (2) GLP-1 如何透過「血糖依賴性（glucose-dependent）」機制調節血糖？(4 分) (3) 為何單純依賴抑制食慾藥物易造成肌肉流失（Sarcopenia）？如何引導青少年建立正確身體價值觀？(4 分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHHG-028",
+      "year": 2026,
+      "region": "彰化縣",
+      "school": "彰化縣立彰化女子高級中學",
+      "source_file": "115 彰化女中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "細胞學",
+      "concepts": [
+        "細胞"
+      ],
+      "stem": "**食安與仙人掌桿菌（8 分）** (1) 仙人掌桿菌屬於革蘭氏陽性菌。請列表比較「革蘭氏陽性菌」與「革蘭氏陰性菌」在細胞壁、毒性及染色反應之差異。(4 分) (2) 仙人掌桿菌「嘔吐型毒素（Cereulide）」具耐熱性，請從其生合成途徑與結構說明原因。(4 分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-CHHG-029",
+      "year": 2026,
+      "region": "彰化縣",
+      "school": "彰化縣立彰化女子高級中學",
+      "source_file": "115 彰化女中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "細胞學",
+      "concepts": [
+        "受體"
+      ],
+      "stem": "Transformation vs. Transduction 二、問答題（每題 10 分，共 9 題，共 90 分） （一）腸道激素與「瘦瘦針」生理機制分析 猛健樂（Mounjaro）和週纖達（Wegovy）等「瘦瘦針」近來受到高度關注，下表是一張網路上常見的瘦瘦針比較表，請回答下列問題： 比較項目 猛健樂 (Tirzepatide) 週纖達 (Semaglutide) 藥物分類 GIP/GLP-1 雙重受體促效劑 GLP-1 受體促效劑 平均體重減輕 72 週平均減重約 20.9% 68 週平均減重約 14.9% 使用方式 皮下注射，每週一次 皮下注射，每週一次 主要副作用 噁心、嘔吐、腹瀉、便秘等腸胃道副作用 噁心、嘔吐、腹瀉、便秘等腸胃道副作用 1. 請列表說明 GLP-1 和 GIP 在人體的分泌部位、作用目標和所引發的生理反應。(4 分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TCHWH-005",
+      "year": 2026,
+      "region": "臺中市",
+      "school": "臺中市立文華高級中等學校",
+      "source_file": "115 文華高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "演化學",
+      "concepts": [
+        "自然選擇",
+        "演化",
+        "突變"
+      ],
+      "stem": "演化遺傳學與奧林匹亞試題分析（11 分） 某位學生在準備生物競賽的過程中，對一道試題（2024 年生物奧林匹亞複賽試題）感到困惑，題目如下： 附圖的資料是由一種昆蟲授粉植物的等位基因頻率變化之分析結果，此植物的種子為經由風和水流傳播，因此使得此植物的種子會成為到達新棲地建立拓荒者族群的第一批個體。此圖的資料為族群間的遺傳結構差異結果，利用族群間等位基因頻度的遺傳分化程度（ ）來代表族群分化之衡量標準... 此處有原始 數據圖。 年輕族群 ( )： 中期族群 ( )： 晚期族群 ( )： 1. 請分析此題涵蓋或可延伸哪些課程內的生物學概念，寫出概念間的關聯性。（4 分） 2. 若學生疑惑遺傳漂變（Genetic drift）和演化的中性理論（Neutral theory of evolution）有關或相同嗎？您會如何回答？請說明原因。（2 分） 3. 若將此題修改為選擇題組，請寫出答案及測驗目標： * ① 下列何種演化機制最能解釋中期族群 降低的現象？ (A) 遺傳漂變 (B) 基因流動 (C) 突變 (D) 自然選擇 * ② 下列哪些敘述可以由此數據直接推論？ (A) 中期族群間基因交流可能增加 (B) 年輕族群內遺傳多樣性下降 (C) 晚期族群間遺傳分化增加 (D) 族群內無突變存在 (E) 族群皆符合 Hardy-Weinberg 平衡（4 分） 4. 針對學生提到「使用 AI 準備競試」，您會引導他注意什麼？（1 分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-HSMHS-016",
+      "year": 2026,
+      "region": "新竹市",
+      "school": "國立新竹高級中學",
+      "source_file": "115 新竹高中.md"
+    },
+    {
+      "type": "single_choice",
+      "topic": "分子生物學",
+      "concepts": [
+        "RNA"
+      ],
+      "stem": "下圖所示為兩種藤壺 (barnacles) 在潮間帶的分布狀況。試驗 (1) 移除 A 種，B 分布不變；試驗 (2) 移除 B 種，A 移棲至原 B 區域。有關 A 種的描述何者正確？[!NOTE] 此處有原始圖表。A 種分布於高潮位區，B 種分布於低潮位區。",
+      "answer": "",
+      "explanation": "",
+      "options": {
+        "A": "競爭是影響分布的最主要因素",
+        "B": "潮水的位置是影響分布的最主要因素",
+        "C": "生物性的因素比非生物性因素影響大",
+        "D": "在本種適合生存的環境下其競爭力比 B 種強",
+        "E": "就非生物性的因素而言，其基礎生態棲位 (fundamental niche) 與實際生態棲位 (realized niche) 相同"
+      },
+      "id": "TCH-BIO-2026-TYNHS-005",
+      "year": 2026,
+      "region": "桃園市",
+      "school": "桃園市立桃園高級中學",
+      "source_file": "115 桃園高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "**T cell exhaustion** ## **四、問答題（6 題，每題 10 分，共 60 分）**",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TCHFY-014",
+      "year": 2026,
+      "region": "臺中市",
+      "school": "臺中市立豐原高級中等學校",
+      "source_file": "115 豐原高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "細胞學",
+      "concepts": [
+        "細胞",
+        "細胞膜"
+      ],
+      "stem": "了解科學的發現史可讓學生更清楚自然科探究與實作的指標。 (1) 試以「細胞膜結構的研究過程」為例，將如何進行引導的上課板書詳列出來。 (2) 並說明進行此安排的學習目標。",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-TCHFY-019",
+      "year": 2026,
+      "region": "臺中市",
+      "school": "臺中市立豐原高級中等學校",
+      "source_file": "115 豐原高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "**CAR-T Cell Therapy** ## **【第二大題】單選題（每題 2 分，共 10 分，答錯不倒扣）**",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-KHHFS-005",
+      "year": 2026,
+      "region": "高雄市",
+      "school": "高雄市立鳳山高級中學",
+      "source_file": "115 鳳山高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "動物學",
+      "concepts": [],
+      "stem": "下圖為人類與兩種動物 (![][image2]) 之血紅素氧解離曲線 (oxygen dissociation curve)。\\[\\!NOTE\\] 此處有原始曲線圖。橫軸為氧分壓 (kPa)，縱軸為血紅素氧飽和百分比。 X 動物：曲線最左偏（親和力最高），生活於通氣不良、低氧的泥濘土壤中。 人類：位於中間。 Y 動物：曲線最右偏（親和力最低），生活於通氣良好、氧氣充足的地面環境。 (1) 此三條曲線皆呈現 S 型 (sigmoidal)。請由血紅素的結構與功能，說明此種曲線形狀形成的原因，並解釋其對氧氣運輸的生理意義。(4 分) (2) 某 Z 動物生活於高海拔地區（低氧、低氣壓環境）。若繪製 Z 動物的血紅素氧解離曲線，會較接近 X 動物、Y 動物或人類？請說明理由。(3 分) (3) 若血紅素對氧的親和力過高，可能不利於組織釋放氧氣。請說明 Z 動物在組織中仍能有效釋放氧氣的生理機制。(3 分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-KHHFS-016",
+      "year": 2026,
+      "region": "高雄市",
+      "school": "高雄市立鳳山高級中學",
+      "source_file": "115 鳳山高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "遺傳學",
+      "concepts": [
+        "染色體"
+      ],
+      "stem": "奧委會則於 3 月 26 日發布了最新的性別檢測規則：2028 年起，奧運女子組別將以 SRY 基因檢測來確認是否有參賽資格。身為高中生物科教師，您如何向學生說明： (1) 甚麼是 SRY 基因？ (3 分) (2) 針對近期奧運賽事中引發的「性別爭議」時事，你如何跟學生說明在醫學與生物學上，染色體性別 (Chromosomal sex) 與表型性別 (Phenotypic sex) 不一致的現象？ (7 分)",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-KHHFS-018",
+      "year": 2026,
+      "region": "高雄市",
+      "school": "高雄市立鳳山高級中學",
+      "source_file": "115 鳳山高中.md"
+    },
+    {
+      "type": "short_answer",
+      "topic": "細胞學",
+      "concepts": [
+        "ATP",
+        "磷酸酐鍵",
+        "高能鍵",
+        "無機磷酸",
+        "Pi"
+      ],
+      "stem": "【簡答題2】在細胞與能量的相關章節中，解釋了ATP對於細胞能量的重要性。學生課後提出一些相關的疑問，請用生物化學的觀念對「高三學生」解釋以下問題：\n(1) 學生提及化學老師曾說：「打斷化學鍵是需要吸收能量的（吸熱）」。問：為何打斷ATP的磷酸酐鍵會放出能量？（2分）\n(2) ATP→ADP+Pi，其中的Pi是一個很常見的縮寫符號，而學生接著問：此縮寫符號中的「i」代表何意？（1分）Pi可不可以直接使用PO₄³⁻表示？（2分）（可或不可皆需解釋原因，原因正確才能得分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-HSMYM-025",
+      "year": 2026,
+      "region": "新竹市",
+      "school": "國立陽明交通大學附屬高級中學",
+      "source_file": "115 陽交附中.pdf"
+    },
+    {
+      "type": "short_answer",
+      "topic": "遺傳學",
+      "concepts": [
+        "多基因遺傳",
+        "數量遺傳",
+        "獨立分配",
+        "雜交",
+        "果實重量"
+      ],
+      "stem": "【簡答題3】某植物的果實重量由（A、a）、（B、b）、（C、c）三對等位基因所控制，屬於多基因遺傳，且每個顯性基因對果實重量增加的條件相同，而三對基因分別位在不同條染色體上。果實最重（基因型為AABBCC）為16克，最輕（aabbcc）為4克。兩親代(AABbCc X AaBbcc)進行雜交，假設此植物能產出無限量的果實，試回答下列問題：\n(1) 親代產出的果實為10克的機率為何？（2分）\n(2) 子代產出的果實中任選兩個，相同重量的機率是多少？（2分）",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-HSMYM-026",
+      "year": 2026,
+      "region": "新竹市",
+      "school": "國立陽明交通大學附屬高級中學",
+      "source_file": "115 陽交附中.pdf"
+    },
+    {
+      "type": "essay",
+      "topic": "動物學",
+      "concepts": [
+        "關節炎",
+        "骨關節炎",
+        "類風濕性關節炎",
+        "免疫耐受",
+        "T細胞",
+        "膠原蛋白"
+      ],
+      "stem": "【綜合題5】閱讀文本設計\n(1) 請用中文寫出本文章的重點摘要。（4分）\n(2) 請針對此文章以中文命出選擇題，此題須包含五個選項，並附上解答。（4分）\n\n文章摘要：Arthritis is a leading cause of disability, affecting 53 million Americans. While Osteoarthritis was traditionally viewed as simple \"wear and tear,\" recent research reveals it shares a pro-inflammatory autoimmune component with Rheumatoid Arthritis. In both conditions, the body's immune system mistakenly identifies collagen as a foreign invader, triggering killer T-cells to attack cartilage. UC-II® (undenatured Type II Collagen) addresses this through Oral Tolerance: ingestion via gut-associated lymphoid tissue (GALT) retrains the immune system to recognize collagen as harmless, suppressing cartilage-attacking T-cells.",
+      "answer": "",
+      "explanation": "",
+      "id": "TCH-BIO-2026-HSMYM-034",
+      "year": 2026,
+      "region": "新竹市",
+      "school": "國立陽明交通大學附屬高級中學",
+      "source_file": "115 陽交附中.pdf"
     }
   ]
 }
