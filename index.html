@@ -200,6 +200,37 @@
     .q-chevron, .q-checkbox-wrap { display: none !important; }
   }
 
+  /* ── 編輯按鈕 ── */
+  .btn-edit-card { display: none; background: none; border: 1px solid var(--border);
+    border-radius: 6px; padding: 3px 9px; font-size: .78rem; cursor: pointer;
+    color: var(--text-muted); flex-shrink: 0; align-self: flex-start;
+    transition: background .15s, color .15s, border-color .15s; }
+  .q-card:hover .btn-edit-card { display: inline-block; }
+  .btn-edit-card:hover { background: var(--bg); color: var(--primary); border-color: var(--primary); }
+  .select-mode .btn-edit-card { display: none !important; }
+
+  /* ── 行內編輯表單 ── */
+  .q-edit-form { padding: 14px 16px; }
+  .edit-row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .edit-field { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .edit-field label { font-size: .78rem; color: var(--text-muted); font-weight: 600; }
+  .edit-field textarea, .edit-field input, .edit-field select {
+    padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: .875rem; background: var(--bg); color: var(--text);
+    font-family: inherit; resize: vertical; outline: none;
+    transition: border-color .15s; }
+  .edit-field textarea:focus, .edit-field input:focus, .edit-field select:focus {
+    border-color: var(--primary); }
+  .edit-field textarea { min-height: 80px; }
+  .edit-opts-grid { display: grid; grid-template-columns: 28px 1fr; gap: 5px 6px; align-items: center; }
+  .edit-actions { display: flex; gap: 8px; align-items: center; margin-top: 14px; }
+  .btn-save { background: var(--primary); color: #fff; padding: 7px 18px;
+    border-radius: 8px; border: none; cursor: pointer; font-weight: 600; font-size: .875rem; }
+  .btn-save:hover { opacity: .85; }
+  .btn-cancel-edit { background: var(--bg); color: var(--text-muted); padding: 7px 14px;
+    border-radius: 8px; border: 1px solid var(--border); cursor: pointer; font-size: .875rem; }
+  .edit-status { font-size: .8rem; color: var(--text-muted); margin-left: 4px; }
+
   /* ── 趨勢圖面板 ── */
   .chart-panel { display: none; background: var(--surface); border-bottom: 1px solid var(--border);
                  padding: 16px 20px; }
@@ -497,6 +528,7 @@ function render() {
           ${conceptsHtml}
           <div class="q-num">${esc(q.id)}</div>
         </div>
+        <button class="btn-edit-card" onclick="event.stopPropagation();editCard('${q.id}')">✏️ 編輯</button>
       </div>
       ${answerSection}
     </div>`;
@@ -558,6 +590,88 @@ function clearSelection() {
   });
   updateExportBar();
 }
+
+// ── 行內編輯 ──
+function editCard(id) {
+  const q = ALL.find(x => x.id === id);
+  if (!q) return;
+
+  const topicOpts = Object.keys(TOPIC_COLORS).map(t =>
+    `<option value="${t}"${q.topic===t?' selected':''}>${t}</option>`).join('');
+  const typeOpts = Object.entries(TYPE_LABEL).map(([v,l]) =>
+    `<option value="${v}"${q.type===v?' selected':''}>${l}</option>`).join('');
+
+  const optsHtml = q.options
+    ? `<div class="edit-field"><label>選項</label>
+        <div class="edit-opts-grid">
+          ${Object.entries(q.options).map(([k,v]) =>
+            `<span class="opt-key">${k}</span>
+             <input class="edit-opt" data-key="${k}" value="${esc(v)}">`
+          ).join('')}
+        </div>
+       </div>`
+    : '';
+
+  document.getElementById('card-' + id).innerHTML = `
+    <div class="q-edit-form">
+      <div class="edit-row">
+        <div class="edit-field"><label>主題</label>
+          <select id="et-topic-${id}">${topicOpts}</select></div>
+        <div class="edit-field"><label>題型</label>
+          <select id="et-type-${id}">${typeOpts}</select></div>
+      </div>
+      <div class="edit-field"><label>題幹</label>
+        <textarea id="et-stem-${id}" rows="6">${esc(q.stem)}</textarea></div>
+      ${optsHtml}
+      <div class="edit-field"><label>答案</label>
+        <textarea id="et-ans-${id}" rows="2">${esc(q.answer||'')}</textarea></div>
+      <div class="edit-actions">
+        <button class="btn-save" onclick="saveEdit('${id}')">💾 儲存</button>
+        <button class="btn-cancel-edit" onclick="cancelEdit('${id}')">取消</button>
+        <span class="edit-status" id="et-status-${id}"></span>
+      </div>
+    </div>`;
+}
+
+async function saveEdit(id) {
+  const q = ALL.find(x => x.id === id);
+  if (!q) return;
+
+  const stem   = document.getElementById(`et-stem-${id}`).value.trim();
+  const answer = document.getElementById(`et-ans-${id}`).value.trim();
+  const topic  = document.getElementById(`et-topic-${id}`).value;
+  const type   = document.getElementById(`et-type-${id}`).value;
+
+  const optInputs = document.querySelectorAll(`#card-${id} .edit-opt`);
+  let options = null;
+  if (optInputs.length) {
+    options = {};
+    optInputs.forEach(inp => { options[inp.dataset.key] = inp.value; });
+  }
+
+  const status = document.getElementById(`et-status-${id}`);
+  status.textContent = '儲存中…';
+
+  const patch = { stem, answer, topic, type };
+  if (options) patch.options = options;
+
+  try {
+    const res = await fetch(`${SB_URL}?id=eq.${encodeURIComponent(id)}`, {
+      method: 'PATCH',
+      headers: { ...SB_HEADERS, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify(patch),
+    });
+    if (!res.ok) throw new Error(res.status);
+    Object.assign(q, { stem, answer, topic, type });
+    if (options) q.options = options;
+    status.textContent = '✓ 已儲存';
+    setTimeout(() => render(), 600);
+  } catch {
+    status.textContent = '⚠️ 儲存失敗，請再試一次';
+  }
+}
+
+function cancelEdit(id) { render(); }
 
 // ── 刪除選取題目（同步 Supabase）──
 async function deleteSelected() {
