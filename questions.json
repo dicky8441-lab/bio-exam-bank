@@ -79823,7 +79823,7 @@
       "region": "全國聯招",
       "source_file": "111 全國聯招.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "mast cells"
       ],
@@ -80420,7 +80420,7 @@
       "region": "新北聯招 2",
       "source_file": "111 新北聯招 2.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "下列有關人體免疫的敘述，何者正確？",
       "answer": "",
@@ -80448,7 +80448,7 @@
       "region": "新北聯招 2",
       "source_file": "111 新北聯招 2.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "translocation"
       ],
@@ -81278,7 +81278,7 @@
       "region": "新北國中",
       "source_file": "112 新北國中.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "下列何者為植物遇到病原體時所產生的過敏反應（hypersenstive response）？",
       "answer": "",
@@ -82529,7 +82529,7 @@
       "region": "全國聯招",
       "source_file": "113 全國聯招.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "basic  reproduction  number"
       ],
@@ -82619,7 +82619,7 @@
       "region": "全國聯招",
       "source_file": "113 全國聯招.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "有關免疫細胞的描述，下列何者正確？",
       "answer": "D",
@@ -82999,7 +82999,7 @@
       "region": "彰化女中（排版）",
       "source_file": "113 彰化女中（排版）.pdf",
       "type": "multiple_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "Riboswitches",
         "expression platform",
@@ -83017,7 +83017,7 @@
       "region": "彰化女中（排版）",
       "source_file": "113 彰化女中（排版）.pdf",
       "type": "multiple_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "下列有關胞毒  T-細胞(T-cytotoxic cells, TC )和自然殺手(Natural killer cell, NK)細胞的比較 敘述，哪些正確？",
       "answer": "",
@@ -83379,7 +83379,7 @@
       "region": "新北聯招",
       "source_file": "113 新北聯招.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "血液中的補體和細菌結合後，會有下列何種功用或現象？",
       "answer": "",
@@ -83715,7 +83715,7 @@
       "region": "新竹國中",
       "source_file": "113 新竹國中.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "某人感染了H1N1病毒。此人在生病時以及康復後各有哪種免疫力？",
       "answer": "",
@@ -84148,7 +84148,7 @@
       "region": "新竹國中",
       "source_file": "113 新竹國中.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "interferon"
       ],
@@ -84670,7 +84670,7 @@
       "region": "西苑高中",
       "source_file": "113 西苑高中.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [],
       "stem": "關於免疫細胞，請選出下列正確的敘述？",
       "answer": "",
@@ -84698,7 +84698,7 @@
       "region": "西苑高中",
       "source_file": "113 西苑高中.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "innate immunity"
       ],
@@ -85206,7 +85206,7 @@
       "region": "師大附中",
       "source_file": "114_師大附中代理.pdf",
       "type": "single_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "猴痘",
         "天花疫苗",
@@ -86535,7 +86535,7 @@
       "region": "師大附中",
       "source_file": "114_師大附中代理.pdf",
       "type": "multiple_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "25-羥基膽固醇",
         "25HC",
@@ -86562,7 +86562,7 @@
       "region": "師大附中",
       "source_file": "114_師大附中代理.pdf",
       "type": "multiple_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "Ch25h",
         "25HC",
@@ -87017,7 +87017,7 @@
       "region": "師大附中",
       "source_file": "114_師大附中代理.pdf",
       "type": "multiple_choice",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "AstraZeneca疫苗",
         "腺病毒載體",
@@ -92248,7 +92248,7 @@
     {
       "id": "TCH-BIO-2026-109",
       "type": "short_answer",
-      "topic": "免疫學",
+      "topic": "動物學",
       "concepts": [
         "調節性T細胞",
         "免疫調控"
