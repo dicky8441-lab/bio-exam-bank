@@ -172,6 +172,7 @@
   .btn-export:hover { opacity: .85; }
   .btn-pdf  { background: #ef4444; color: #fff; }
   .btn-docx { background: #2563eb; color: #fff; }
+  .btn-del  { background: #dc2626; color: #fff; }
   .btn-clear { background: var(--bg); color: var(--text-muted);
     border: 1px solid var(--border); }
 
@@ -276,6 +277,7 @@
 <div class="export-bar" id="export-bar">
   <span class="sel-count" id="sel-count">已選 0 題</span>
   <button class="btn-export btn-clear" onclick="clearSelection()">清除</button>
+  <button class="btn-export btn-del"  onclick="deleteSelected()">🗑 刪除選取</button>
   <button class="btn-export btn-pdf"  onclick="exportPDF()">匯出 PDF</button>
   <button class="btn-export btn-docx" onclick="exportDOCX()">匯出 DOCX</button>
 </div>
@@ -555,6 +557,35 @@ function clearSelection() {
     if (cb) cb.checked = false;
   });
   updateExportBar();
+}
+
+// ── 刪除選取題目（同步 Supabase）──
+async function deleteSelected() {
+  if (!selectedIds.size) return;
+  const n = selectedIds.size;
+  if (!confirm(`確定要從題庫永久刪除這 ${n} 題嗎？\n此操作無法復原。`)) return;
+
+  const ids = [...selectedIds];
+  let done = 0, fail = 0;
+
+  for (const id of ids) {
+    try {
+      const res = await fetch(`${SB_URL}?id=eq.${encodeURIComponent(id)}`, {
+        method: 'DELETE', headers: SB_HEADERS,
+      });
+      if (res.ok) {
+        const idx = ALL.findIndex(q => q.id === id);
+        if (idx !== -1) ALL.splice(idx, 1);
+        selectedIds.delete(id);
+        done++;
+      } else { fail++; }
+    } catch { fail++; }
+  }
+
+  document.getElementById('db-meta').textContent = `共 ${ALL.length} 題`;
+  updateExportBar();
+  render();
+  if (fail > 0) alert(`完成：刪除 ${done} 題，失敗 ${fail} 題。`);
 }
 
 // ── 匯出 PDF ──
