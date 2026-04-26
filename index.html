@@ -25,6 +25,7 @@
     --tag-mc:   #fffbeb; --tag-mc-t:   #b45309;
     --tag-sa:   #f0f9ff; --tag-sa-t:   #0369a1;
     --tag-es:   #fdf4ff; --tag-es-t:   #7e22ce;
+    --tag-sci:  #fff7ed; --tag-sci-t:  #c2410c;
     --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
     --shadow-lg: 0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.05);
     --radius: 10px;
@@ -43,6 +44,7 @@
     --tag-mc:   #451a03; --tag-mc-t:   #fbbf24;
     --tag-sa:   #0c2a3e; --tag-sa-t:   #38bdf8;
     --tag-es:   #3b0764; --tag-es-t:   #d8b4fe;
+    --tag-sci:  #431407; --tag-sci-t:  #fdba74;
     --shadow: 0 1px 3px rgba(0,0,0,.3);
     --shadow-lg: 0 4px 6px rgba(0,0,0,.3);
   }
@@ -86,7 +88,7 @@
   main { max-width: 900px; margin: 0 auto; padding: 20px 16px; }
 
   /* ── 統計卡片 ── */
-  .stats-row { display: grid; grid-template-columns: repeat(7, 1fr);
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
                gap: 10px; margin-bottom: 20px; }
   .stat-card { background: var(--surface); border: 1px solid var(--border);
                border-radius: var(--radius); padding: 14px; text-align: center;
@@ -113,7 +115,8 @@
   .tag-動物學    { background: var(--tag-ani);   color: var(--tag-ani-t);  }
   .tag-植物學    { background: var(--tag-plant); color: var(--tag-plant-t);}
   .tag-生態學    { background: var(--tag-eco);   color: var(--tag-eco-t);  }
-  .tag-演化學    { background: var(--tag-evo);   color: var(--tag-evo-t);  }
+  .tag-演化學         { background: var(--tag-evo);   color: var(--tag-evo-t);  }
+  .tag-科學探究與教學  { background: var(--tag-sci);   color: var(--tag-sci-t);  }
   .tag-single_choice  { background: var(--tag-sc);  color: var(--tag-sc-t);  }
   .tag-multiple_choice{ background: var(--tag-mc);  color: var(--tag-mc-t);  }
   .tag-short_answer   { background: var(--tag-sa);  color: var(--tag-sa-t);  }
@@ -225,8 +228,9 @@
   </div>
   <select id="f-topic" onchange="render()">
     <option value="">所有主題</option>
-    <option>細胞學</option><option>遺傳學</option><option>分子生物學</option>
-    <option>動物學</option><option>植物學</option><option>生態學</option><option>演化學</option>
+    <option>動物學</option><option>細胞學</option><option>植物學</option>
+    <option>遺傳學</option><option>分子生物學</option><option>生態學</option>
+    <option>演化學</option><option>科學探究與教學</option>
   </select>
   <select id="f-type" onchange="render()">
     <option value="">所有題型</option>
@@ -276,21 +280,41 @@ const TYPE_LABEL = {
 // ── 主題統計色 ──
 const TOPIC_COLORS = {
   '細胞學':'#3b82f6','遺傳學':'#f59e0b','分子生物學':'#10b981',
-  '動物學':'#ef4444','植物學':'#22c55e','生態學':'#06b6d4','演化學':'#8b5cf6'
+  '動物學':'#ef4444','植物學':'#22c55e','生態學':'#06b6d4',
+  '演化學':'#8b5cf6','科學探究與教學':'#f97316'
 };
 
-// ── 載入資料 ──
-fetch('questions.json')
-  .then(r => r.json())
-  .then(db => {
-    ALL = db.questions;
-    document.getElementById('db-meta').textContent =
-      `共 ${db.metadata.total_questions} 題 · 更新：${db.metadata.last_updated}`;
+// ── Supabase 設定 ──
+const SB_URL = 'https://djfidpwcqhnxztcxdxgy.supabase.co/rest/v1/questions';
+const SB_KEY = 'sb_publishable_VNv5VYyZWGMIIZbDaVpUJg_o3rnLJDe';
+const SB_HEADERS = { 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}` };
+
+// ── 載入所有資料（分批，每批 1000 筆）──
+async function loadAll() {
+  const BATCH = 1000;
+  let all = [], offset = 0;
+  const meta = document.getElementById('db-meta');
+  while (true) {
+    const res = await fetch(`${SB_URL}?select=*&limit=${BATCH}&offset=${offset}&order=id`, { headers: SB_HEADERS });
+    if (!res.ok) throw new Error(res.status);
+    const batch = await res.json();
+    all = all.concat(batch);
+    meta.textContent = `載入中… ${all.length} 題`;
+    if (batch.length < BATCH) break;
+    offset += BATCH;
+  }
+  return all;
+}
+
+loadAll()
+  .then(questions => {
+    ALL = questions;
+    document.getElementById('db-meta').textContent = `共 ${ALL.length} 題`;
     buildSelects();
     render();
   })
   .catch(() => {
-    document.getElementById('db-meta').textContent = '⚠️ 無法載入題庫（請用 HTTP 伺服器開啟）';
+    document.getElementById('db-meta').textContent = '⚠️ 無法連線到題庫';
   });
 
 function buildSelects() {
