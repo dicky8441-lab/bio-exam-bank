@@ -895,9 +895,13 @@ function renderChart() {
   const datasets = topics.map(topic => ({
     label: topic,
     data: years.map(y => ALL.filter(q => q.year === y && q.topic === topic).length),
-    backgroundColor: TOPIC_COLORS[topic] + 'cc',
     borderColor: TOPIC_COLORS[topic],
-    borderWidth: 1,
+    backgroundColor: TOPIC_COLORS[topic] + '33',
+    borderWidth: 2,
+    pointRadius: 4,
+    pointHoverRadius: 6,
+    tension: 0.3,
+    fill: false,
   }));
 
   const textColor = isDark ? '#94a3b8' : '#64748b';
@@ -906,19 +910,20 @@ function renderChart() {
   const ctx = document.getElementById('trend-chart').getContext('2d');
   if (_chart) _chart.destroy();
   _chart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: { labels: years.map(y => `民${y - 1911}`), datasets },
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { position: 'top', labels: { color: textColor, boxWidth: 12, padding: 10, font: { size: 11 } } },
+        legend: { position: 'top', labels: { color: textColor, boxWidth: 12, padding: 10, font: { size: 11 }, usePointStyle: true } },
         tooltip: { callbacks: { title: items => `民國 ${years[items[0].dataIndex] - 1911} 年` } },
       },
       scales: {
-        x: { stacked: true, ticks: { color: textColor }, grid: { color: gridColor } },
-        y: { stacked: true, ticks: { color: textColor }, grid: { color: gridColor },
-             title: { display: true, text: '題數', color: textColor } },
+        x: { ticks: { color: textColor }, grid: { color: gridColor } },
+        y: { ticks: { color: textColor }, grid: { color: gridColor },
+             title: { display: true, text: '題數', color: textColor }, beginAtZero: true },
       },
     },
   });
