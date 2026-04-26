@@ -102,10 +102,9 @@
              border-radius: var(--radius); box-shadow: var(--shadow);
              overflow: hidden; transition: box-shadow .15s; }
   .q-card:hover { box-shadow: var(--shadow-lg); }
-  .q-head { padding: 12px 16px; display: flex; align-items: flex-start; gap: 10px;
-            cursor: pointer; user-select: none; }
+  .q-head { padding: 12px 16px; display: flex; align-items: flex-start; gap: 10px; }
   .q-num { font-size: .72rem; color: var(--text-muted); font-family: monospace;
-           white-space: nowrap; padding-top: 2px; }
+           white-space: nowrap; padding-top: 6px; }
   .q-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
   .tag { display: inline-block; padding: 2px 8px; border-radius: 20px;
          font-size: .72rem; font-weight: 600; white-space: nowrap; }
@@ -125,13 +124,15 @@
   [data-theme="dark"] .tag-term_explanation { background: #3b0764; color: #d8b4fe; }
   .tag-school { background: var(--bg); color: var(--text-muted);
                 border: 1px solid var(--border); }
-  .q-stem { font-size: .9rem; line-height: 1.6; flex: 1; }
-  .q-chevron { color: var(--text-muted); font-size: .85rem; margin-left: auto;
-               transition: transform .2s; flex-shrink: 0; }
-  .q-card.open .q-chevron { transform: rotate(180deg); }
-  .q-body { display: none; padding: 0 16px 14px; border-top: 1px solid var(--border); }
-  .q-card.open .q-body { display: block; }
+  .q-stem { font-size: .9rem; line-height: 1.6; }
+  .q-body { padding: 0 16px 14px; border-top: 1px solid var(--border); }
   .options { margin: 10px 0; display: flex; flex-direction: column; gap: 5px; }
+  .btn-answer { margin-top: 10px; padding: 4px 14px; border-radius: 20px;
+                border: 1px solid var(--border); background: var(--bg);
+                color: var(--text-muted); font-size: .8rem; cursor: pointer;
+                transition: border-color .15s, color .15s; }
+  .btn-answer:hover { border-color: var(--primary); color: var(--primary); }
+  .q-answer.hidden { display: none; }
   .opt { display: flex; gap: 8px; font-size: .875rem; line-height: 1.5; }
   .opt-key { font-weight: 700; color: var(--primary); min-width: 20px; }
   .q-answer { margin-top: 10px; padding: 8px 12px; border-radius: 8px;
@@ -213,8 +214,8 @@
     <div class="meta" id="db-meta">載入中…</div>
   </div>
   <div class="header-right">
-    <button class="btn-icon" onclick="toggleAll(true)">全展開</button>
-    <button class="btn-icon" onclick="toggleAll(false)">全收合</button>
+    <button class="btn-icon" onclick="toggleAll(true)">全顯答案</button>
+    <button class="btn-icon" onclick="toggleAll(false)">全收答案</button>
     <button class="btn-icon" id="select-btn" onclick="toggleSelectMode()">勾選</button>
     <button class="btn-icon" id="diag-btn" onclick="toggleDiagMode()">診斷</button>
     <button class="btn-icon" id="theme-btn" onclick="toggleTheme()">🌙</button>
@@ -226,13 +227,13 @@
     <span class="icon">🔍</span>
     <input type="text" id="search" placeholder="關鍵字搜尋題幹、概念…" oninput="render()">
   </div>
-  <select id="f-topic" onchange="render()">
+  <select id="f-topic" onchange="updateSchoolSelect();render()">
     <option value="">所有主題</option>
     <option>動物學</option><option>細胞學</option><option>植物學</option>
     <option>遺傳學</option><option>分子生物學</option><option>生態學</option>
     <option>演化學</option><option>科學探究與教學</option>
   </select>
-  <select id="f-type" onchange="render()">
+  <select id="f-type" onchange="updateSchoolSelect();render()">
     <option value="">所有題型</option>
     <option value="single_choice">單選題</option>
     <option value="multiple_choice">多選題</option>
@@ -240,7 +241,7 @@
     <option value="essay">申論題</option>
     <option value="term_explanation">名詞解釋</option>
   </select>
-  <select id="f-year" onchange="render()">
+  <select id="f-year" onchange="updateSchoolSelect();render()">
     <option value="">所有年度</option>
   </select>
   <select id="f-school" onchange="render()">
@@ -318,20 +319,38 @@ loadAll()
   });
 
 function buildSelects() {
-  const years   = [...new Set(ALL.map(q => q.year))].sort((a,b)=>b-a);
-  const schools = [...new Set(ALL.map(q => q.school))].sort();
+  const years = [...new Set(ALL.map(q => q.year))].sort((a,b)=>b-a);
   const yEl = document.getElementById('f-year');
-  const sEl = document.getElementById('f-school');
   years.forEach(y => {
     const o = document.createElement('option');
     o.value = y; o.textContent = `民國 ${y-1911} 年（${y}）`;
     yEl.appendChild(o);
   });
+  updateSchoolSelect();
+}
+
+function updateSchoolSelect() {
+  const topic  = document.getElementById('f-topic').value;
+  const type   = document.getElementById('f-type').value;
+  const year   = document.getElementById('f-year').value;
+  const sEl    = document.getElementById('f-school');
+  const prev   = sEl.value;
+
+  const schools = [...new Set(
+    ALL.filter(q =>
+      (!topic  || q.topic === topic) &&
+      (!type   || q.type  === type)  &&
+      (!year   || String(q.year) === year)
+    ).map(q => q.school)
+  )].sort();
+
+  sEl.innerHTML = '<option value="">所有學校</option>';
   schools.forEach(s => {
     const o = document.createElement('option');
     o.value = s; o.textContent = s;
     sEl.appendChild(o);
   });
+  sEl.value = schools.includes(prev) ? prev : '';
 }
 
 // ── 篩選 ──
@@ -412,8 +431,16 @@ function render() {
       : '';
 
     const isSelected = selectedIds.has(q.id);
+    const answerSection = q.answer
+      ? `<div class="q-body">
+          <button class="btn-answer" onclick="toggleAnswer('${q.id}')">查看答案</button>
+          <div class="q-answer hidden" id="ans-${q.id}">
+            <span class="lbl">答案：</span>${esc(q.answer)}
+          </div>
+        </div>`
+      : '';
     return `<div class="q-card${isSelected?' selected':''}" id="card-${q.id}">
-      <div class="q-head" onclick="handleCardClick(event,'${q.id}')">
+      <div class="q-head" onclick="if(selectMode)handleCardClick(event,'${q.id}')">
         <div class="q-checkbox-wrap">
           <input type="checkbox" class="q-checkbox" ${isSelected?'checked':''} onclick="event.stopPropagation();toggleSelect('${q.id}')">
         </div>
@@ -425,32 +452,31 @@ function render() {
             <span class="tag tag-school">民${q.year-1911}</span>
           </div>
           <div class="q-stem">${stemHtml}</div>
+          ${optionsHtml}
+          ${conceptsHtml}
           <div class="q-num">${esc(q.id)}</div>
         </div>
-        <span class="q-chevron">▼</span>
       </div>
-      <div class="q-body">
-        ${optionsHtml}
-        ${answerHtml}
-        ${conceptsHtml}
-      </div>
+      ${answerSection}
     </div>`;
   }).join('');
 }
 
 function handleCardClick(event, id) {
-  if (selectMode) {
-    toggleSelect(id);
-  } else {
-    toggleCard(id);
-  }
+  if (selectMode) toggleSelect(id);
 }
-function toggleCard(id) {
-  document.getElementById('card-' + id)?.classList.toggle('open');
+function toggleAnswer(id) {
+  const ans = document.getElementById('ans-' + id);
+  if (!ans) return;
+  ans.classList.toggle('hidden');
+  const btn = ans.previousElementSibling;
+  btn.textContent = ans.classList.contains('hidden') ? '查看答案' : '收起答案';
 }
 function toggleAll(open) {
-  document.querySelectorAll('.q-card').forEach(c =>
-    open ? c.classList.add('open') : c.classList.remove('open'));
+  document.querySelectorAll('.q-answer').forEach(el => el.classList.toggle('hidden', !open));
+  document.querySelectorAll('.btn-answer').forEach(btn => {
+    btn.textContent = open ? '收起答案' : '查看答案';
+  });
 }
 
 // ── 勾選模式 ──
