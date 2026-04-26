@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>生物教師甄試題庫</title>
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #f5f7fa;
@@ -198,6 +199,12 @@
     .q-chevron, .q-checkbox-wrap { display: none !important; }
   }
 
+  /* ── 趨勢圖面板 ── */
+  .chart-panel { display: none; background: var(--surface); border-bottom: 1px solid var(--border);
+                 padding: 16px 20px; }
+  .chart-panel.show { display: block; }
+  .chart-wrap { max-width: 860px; margin: 0 auto; position: relative; height: 260px; }
+
   /* ── RWD ── */
   @media (max-width: 600px) {
     .filter-bar { padding: 10px 12px; }
@@ -217,6 +224,7 @@
     <button class="btn-icon" onclick="toggleAll(true)">全顯答案</button>
     <button class="btn-icon" onclick="toggleAll(false)">全收答案</button>
     <button class="btn-icon" id="select-btn" onclick="toggleSelectMode()">勾選</button>
+    <button class="btn-icon" id="chart-btn" onclick="toggleChart()">趨勢圖</button>
     <button class="btn-icon" id="diag-btn" onclick="toggleDiagMode()">診斷</button>
     <button class="btn-icon" id="theme-btn" onclick="toggleTheme()">🌙</button>
   </div>
@@ -248,6 +256,10 @@
     <option value="">所有學校</option>
   </select>
   <div class="filter-count" id="filter-count">— 題</div>
+</div>
+
+<div class="chart-panel" id="chart-panel">
+  <div class="chart-wrap"><canvas id="trend-chart"></canvas></div>
 </div>
 
 <main>
@@ -312,6 +324,9 @@ loadAll()
     ALL = questions;
     document.getElementById('db-meta').textContent = `共 ${ALL.length} 題`;
     buildSelects();
+    const savedSchool = loadFilters();
+    updateSchoolSelect();
+    if (savedSchool) document.getElementById('f-school').value = savedSchool;
     render();
   })
   .catch(() => {
@@ -351,6 +366,29 @@ function updateSchoolSelect() {
     sEl.appendChild(o);
   });
   sEl.value = schools.includes(prev) ? prev : '';
+}
+
+// ── 篩選條件記憶（URL query string）──
+function saveFilters() {
+  const params = new URLSearchParams();
+  const v = id => document.getElementById(id).value;
+  if (v('f-topic'))  params.set('topic',  v('f-topic'));
+  if (v('f-type'))   params.set('type',   v('f-type'));
+  if (v('f-year'))   params.set('year',   v('f-year'));
+  if (v('f-school')) params.set('school', v('f-school'));
+  if (v('search'))   params.set('q',      v('search'));
+  const str = params.toString();
+  history.replaceState(null, '', str ? '?' + str : location.pathname);
+}
+
+function loadFilters() {
+  const p = new URLSearchParams(location.search);
+  const set = (id, key) => { if (p.get(key)) document.getElementById(id).value = p.get(key); };
+  set('f-topic', 'topic');
+  set('f-type',  'type');
+  set('f-year',  'year');
+  set('search',  'q');
+  return p.get('school') || '';
 }
 
 // ── 篩選 ──
@@ -393,6 +431,7 @@ function esc(s) {
 
 // ── 渲染 ──
 function render() {
+  saveFilters();
   const filtered = getFiltered();
   document.getElementById('filter-count').textContent = `${filtered.length} 題`;
 
@@ -692,12 +731,61 @@ function downloadDiagReport() {
   URL.revokeObjectURL(url);
 }
 
+// ── 趨勢圖 ──
+let _chart = null;
+
+function toggleChart() {
+  const panel = document.getElementById('chart-panel');
+  const btn = document.getElementById('chart-btn');
+  const showing = panel.classList.toggle('show');
+  btn.textContent = showing ? '✕ 趨勢圖' : '趨勢圖';
+  if (showing) renderChart();
+}
+
+function renderChart() {
+  const years = [...new Set(ALL.map(q => q.year))].sort((a, b) => a - b);
+  const topics = Object.keys(TOPIC_COLORS);
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+  const datasets = topics.map(topic => ({
+    label: topic,
+    data: years.map(y => ALL.filter(q => q.year === y && q.topic === topic).length),
+    backgroundColor: TOPIC_COLORS[topic] + 'cc',
+    borderColor: TOPIC_COLORS[topic],
+    borderWidth: 1,
+  }));
+
+  const textColor = isDark ? '#94a3b8' : '#64748b';
+  const gridColor = isDark ? '#334155' : '#e2e8f0';
+
+  const ctx = document.getElementById('trend-chart').getContext('2d');
+  if (_chart) _chart.destroy();
+  _chart = new Chart(ctx, {
+    type: 'bar',
+    data: { labels: years.map(y => `民${y - 1911}`), datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top', labels: { color: textColor, boxWidth: 12, padding: 10, font: { size: 11 } } },
+        tooltip: { callbacks: { title: items => `民國 ${years[items[0].dataIndex] - 1911} 年` } },
+      },
+      scales: {
+        x: { stacked: true, ticks: { color: textColor }, grid: { color: gridColor } },
+        y: { stacked: true, ticks: { color: textColor }, grid: { color: gridColor },
+             title: { display: true, text: '題數', color: textColor } },
+      },
+    },
+  });
+}
+
 // ── 深色模式 ──
 function toggleTheme() {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
   document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
   document.getElementById('theme-btn').textContent = isDark ? '🌙' : '☀️';
   localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  if (document.getElementById('chart-panel').classList.contains('show')) renderChart();
 }
 (function initTheme() {
   const saved = localStorage.getItem('theme') || 'light';
