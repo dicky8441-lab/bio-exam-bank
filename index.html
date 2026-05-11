@@ -109,11 +109,10 @@
   .q-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
   .tag { display: inline-block; padding: 2px 8px; border-radius: 20px;
          font-size: .72rem; font-weight: 600; white-space: nowrap; }
-  .tag-細胞學    { background: var(--tag-cell);  color: var(--tag-cell-t); }
-  .tag-遺傳學    { background: var(--tag-gene);  color: var(--tag-gene-t); }
-  .tag-分子生物學 { background: var(--tag-mol);   color: var(--tag-mol-t);  }
-  .tag-動物學    { background: var(--tag-ani);   color: var(--tag-ani-t);  }
-  .tag-植物學    { background: var(--tag-plant); color: var(--tag-plant-t);}
+  .tag-細胞學         { background: var(--tag-cell);  color: var(--tag-cell-t); }
+  .tag-遺傳與分子生物學{ background: var(--tag-gene);  color: var(--tag-gene-t); }
+  .tag-動物學         { background: var(--tag-ani);   color: var(--tag-ani-t);  }
+  .tag-植物學         { background: var(--tag-plant); color: var(--tag-plant-t);}
   .tag-生態學    { background: var(--tag-eco);   color: var(--tag-eco-t);  }
   .tag-演化學         { background: var(--tag-evo);   color: var(--tag-evo-t);  }
   .tag-科學探究與教學  { background: var(--tag-sci);   color: var(--tag-sci-t);  }
@@ -270,7 +269,7 @@
   <select id="f-topic" onchange="updateSchoolSelect();render()">
     <option value="">所有主題</option>
     <option>動物學</option><option>細胞學</option><option>植物學</option>
-    <option>遺傳學</option><option>分子生物學</option><option>生態學</option>
+    <option>遺傳與分子生物學</option><option>生態學</option>
     <option>演化學</option><option>科學探究與教學</option>
   </select>
   <select id="f-type" onchange="updateSchoolSelect();render()">
@@ -325,9 +324,9 @@ const TYPE_LABEL = {
 
 // ── 主題統計色 ──
 const TOPIC_COLORS = {
-  '細胞學':'#3b82f6','遺傳學':'#f59e0b','分子生物學':'#10b981',
-  '動物學':'#ef4444','植物學':'#22c55e','生態學':'#06b6d4',
-  '演化學':'#8b5cf6','科學探究與教學':'#f97316'
+  '細胞學':'#3b82f6','遺傳與分子生物學':'#f59e0b','動物學':'#ef4444',
+  '植物學':'#22c55e','生態學':'#06b6d4','演化學':'#8b5cf6',
+  '科學探究與教學':'#f97316'
 };
 
 // ── Supabase 設定 ──
